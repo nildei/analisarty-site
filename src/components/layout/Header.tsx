@@ -44,7 +44,7 @@ export function Header() {
         scrolled ? "border-b border-white/10 bg-navy-950/85 backdrop-blur-md" : "bg-transparent",
       )}
     >
-      <Container className="flex h-24 items-center justify-between py-2">
+      <Container className="flex h-28 items-center justify-between py-2">
         <Link href="/" aria-label="Analisarty Negócios Online">
           <Logo />
         </Link>

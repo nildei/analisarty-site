@@ -8,7 +8,7 @@ export function Logo({ className }: { className?: string }) {
       alt="Analisarty Negócios Online"
       width={398}
       height={174}
-      className={cn("h-14 w-auto sm:h-16", className)}
+      className={cn("h-16 w-auto sm:h-[4.75rem]", className)}
       priority
     />
   );

@@ -11,6 +11,7 @@ export const siteConfig = {
   whatsappDisplay: "+55 31 99263-7359",
   instagram: "https://www.instagram.com/analisarty",
   instagramHandle: "@analisarty",
+  linkedin: "https://www.linkedin.com/in/analisarty-neg%C3%B3cios-online-2117b4355/",
   areaServed: "Brasil e exterior — atendimento 100% online",
   locale: "pt_BR",
 } as const;

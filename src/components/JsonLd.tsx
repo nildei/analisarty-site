@@ -17,7 +17,7 @@ export function JsonLd() {
       "@type": "Country",
       name: "BR",
     },
-    sameAs: [siteConfig.instagram],
+    sameAs: [siteConfig.instagram, siteConfig.linkedin],
     priceRange: "$$",
     serviceType: [
       "Otimização do Perfil da Empresa no Google",

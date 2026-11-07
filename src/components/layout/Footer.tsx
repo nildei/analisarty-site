@@ -36,6 +36,15 @@ export function Footer() {
             >
               <Image src="/images/instagram-icon.png" alt="" width={30} height={30} className="size-[30px] rounded-[8px]" />
             </a>
+            <a
+              href={siteConfig.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="transition-transform hover:scale-110"
+            >
+              <Image src="/images/linkedin-icon.png" alt="" width={30} height={30} className="size-[30px] rounded-[6px]" />
+            </a>
           </div>
         </div>
 

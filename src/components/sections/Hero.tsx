@@ -99,23 +99,6 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 24, y: 24 }}
-            animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.55 }}
-            className="absolute -bottom-10 -right-6 hidden w-[230px] sm:block lg:-right-10"
-          >
-            <PhotoMotion
-              src="/images/sistema-autogestao.jpg"
-              alt="Sistema de gestão desenvolvido pela Analisarty, com dashboard de clientes, estoque e financeiro"
-              className="aspect-[4/3]"
-              objectPosition="65% center"
-            />
-            <p className="mt-2 text-center text-[11px] font-semibold text-white/70">
-              Sistemas sob medida para sua gestão
-            </p>
-          </motion.div>
-
-          <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             className="absolute -left-6 top-10 hidden rounded-xl border border-white/10 bg-navy-900/90 px-3 py-2.5 text-xs font-semibold text-white shadow-card lg:flex lg:items-center lg:gap-2"

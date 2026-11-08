@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Eye, MessageCircle, ShieldCheck, Users } from "lucide-react";
+import { Eye, ShieldCheck, Users } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { PhotoMotion } from "@/components/graphics/PhotoMotion";
@@ -96,24 +96,6 @@ export function Hero() {
               className="aspect-video"
               priority
             />
-          </motion.div>
-
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -left-6 top-10 hidden rounded-xl border border-white/10 bg-navy-900/90 px-3 py-2.5 text-xs font-semibold text-white shadow-card lg:flex lg:items-center lg:gap-2"
-          >
-            <ShieldCheck className="size-4 text-emerald-400" />
-            Atendimento 100% online
-          </motion.div>
-
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-            className="absolute right-4 top-6 hidden rounded-xl border border-white/10 bg-navy-900/90 px-3 py-2.5 text-xs font-semibold text-white shadow-card lg:flex lg:items-center lg:gap-2"
-          >
-            <MessageCircle className="size-4 text-blue-300" />
-            Fala direto com especialista
           </motion.div>
         </div>
       </Container>

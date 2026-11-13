@@ -7,6 +7,8 @@ export function JsonLd() {
     name: siteConfig.fullName,
     alternateName: siteConfig.name,
     url: siteConfig.url,
+    logo: `${siteConfig.url}/images/logo-analisarty.png`,
+    image: `${siteConfig.url}/opengraph-image.jpg`,
     description: siteConfig.description,
     founder: {
       "@type": "Person",
@@ -16,6 +18,13 @@ export function JsonLd() {
     areaServed: {
       "@type": "Country",
       name: "BR",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      telephone: `+${siteConfig.whatsappNumber}`,
+      areaServed: "BR",
+      availableLanguage: ["Portuguese"],
     },
     sameAs: [siteConfig.instagram, siteConfig.linkedin],
     priceRange: "$$",

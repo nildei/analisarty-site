@@ -1,4 +1,5 @@
-import { Check, LayoutDashboard, LayoutTemplate, MapPin, MousePointerClick, TrendingUp } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Check, LayoutDashboard, LayoutTemplate, MapPin, MousePointerClick, TrendingUp } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
@@ -89,14 +90,22 @@ export function Services() {
                     ))}
                   </ul>
 
-                  <Button
-                    href={buildWhatsAppLink(service.whatsappMessage)}
-                    variant="secondary"
-                    showArrow
-                    className="mt-auto w-fit"
-                  >
-                    {service.cta}
-                  </Button>
+                  <div className="mt-auto flex flex-wrap items-center gap-4">
+                    <Button
+                      href={buildWhatsAppLink(service.whatsappMessage)}
+                      variant="secondary"
+                      showArrow
+                    >
+                      {service.cta}
+                    </Button>
+                    <Link
+                      href={`/servicos/${service.id}`}
+                      className="flex items-center gap-1.5 text-sm font-semibold text-blue-300 hover:text-blue-200"
+                    >
+                      Saiba mais
+                      <ArrowRight className="size-4" />
+                    </Link>
+                  </div>
                 </article>
               </Reveal>
             );
@@ -138,15 +147,23 @@ export function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Button
-                    href={buildWhatsAppLink(service.whatsappMessage)}
-                    variant="secondary"
-                    size="md"
-                    showArrow
-                    className="mt-auto w-fit"
-                  >
-                    {service.cta}
-                  </Button>
+                  <div className="mt-auto flex flex-wrap items-center gap-4">
+                    <Button
+                      href={buildWhatsAppLink(service.whatsappMessage)}
+                      variant="secondary"
+                      size="md"
+                      showArrow
+                    >
+                      {service.cta}
+                    </Button>
+                    <Link
+                      href={`/servicos/${service.id}`}
+                      className="flex items-center gap-1.5 text-sm font-semibold text-blue-300 hover:text-blue-200"
+                    >
+                      Saiba mais
+                      <ArrowRight className="size-4" />
+                    </Link>
+                  </div>
                 </article>
               </Reveal>
             );

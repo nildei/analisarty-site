@@ -53,9 +53,9 @@ export function Footer() {
           <ul className="mt-4 space-y-3">
             {services.map((service) => (
               <li key={service.id}>
-                <a href={`#${service.id}`} className="text-sm text-white/55 transition-colors hover:text-white">
+                <Link href={`/servicos/${service.id}`} className="text-sm text-white/55 transition-colors hover:text-white">
                   {service.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -64,9 +64,9 @@ export function Footer() {
         <div>
           <p className="text-sm font-semibold text-white">Empresa</p>
           <ul className="mt-4 space-y-3">
-            <li><a href="#sobre" className="text-sm text-white/55 transition-colors hover:text-white">Sobre a Analisarty</a></li>
-            <li><a href="#faq" className="text-sm text-white/55 transition-colors hover:text-white">Perguntas frequentes</a></li>
-            <li><a href="#diagnostico" className="text-sm text-white/55 transition-colors hover:text-white">Diagnóstico gratuito</a></li>
+            <li><Link href="/#sobre" className="text-sm text-white/55 transition-colors hover:text-white">Sobre a Analisarty</Link></li>
+            <li><Link href="/#faq" className="text-sm text-white/55 transition-colors hover:text-white">Perguntas frequentes</Link></li>
+            <li><Link href="/#diagnostico" className="text-sm text-white/55 transition-colors hover:text-white">Diagnóstico gratuito</Link></li>
           </ul>
         </div>
 

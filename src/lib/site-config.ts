@@ -29,10 +29,13 @@ export interface ServiceDefinition {
   title: string;
   headline: string;
   description: string;
+  longDescription: string;
+  targetAudience: string;
   benefits: string[];
   cta: string;
   whatsappMessage: string;
   icon: string;
+  faqIndices: number[];
 }
 
 export const services: ServiceDefinition[] = [
@@ -43,6 +46,10 @@ export const services: ServiceDefinition[] = [
     headline: "Sua empresa mais visível nas pesquisas do Google.",
     description:
       "Otimizamos o Perfil da Empresa no Google para melhorar sua apresentação, fortalecer sua relevância local e ampliar as oportunidades de ser encontrado por clientes que procuram seus serviços.",
+    longDescription:
+      "Um perfil bem estruturado aumenta as chances de a sua empresa aparecer nas buscas locais e no Google Maps, exatamente no momento em que o cliente já está procurando o que você oferece. Trabalhamos a estrutura, as categorias e as informações do seu perfil para fortalecer sua presença local.",
+    targetAudience:
+      "Empresas que atendem clientes na própria região e querem ser encontradas com mais facilidade quando alguém pesquisa pelos seus serviços no Google.",
     benefits: [
       "Reestruturação completa do perfil empresarial",
       "Otimização de categorias e serviços",
@@ -54,6 +61,7 @@ export const services: ServiceDefinition[] = [
     whatsappMessage:
       "Olá! Conheci a Analisarty pelo site e gostaria de entender como funciona o serviço de otimização do Perfil da Empresa no Google para minha empresa.",
     icon: "MapPin",
+    faqIndices: [0, 1, 2],
   },
   {
     id: "trafego-pago",
@@ -62,6 +70,10 @@ export const services: ServiceDefinition[] = [
     headline: "Coloque sua empresa na frente de quem pode comprar.",
     description:
       "Planejamento e criação de campanhas estratégicas para alcançar públicos qualificados, gerar oportunidades comerciais e aumentar as possibilidades de vendas.",
+    longDescription:
+      "Campanhas bem planejadas colocam sua empresa na frente de pessoas com intenção real de compra, no momento certo da jornada. Acompanhamos o desempenho de perto para direcionar o orçamento para o que realmente gera oportunidades de negócio.",
+    targetAudience:
+      "Empresas que já têm uma oferta clara e querem acelerar a geração de oportunidades comerciais qualificadas.",
     benefits: [
       "Planejamento de campanhas por objetivo",
       "Segmentação de público qualificado",
@@ -73,6 +85,7 @@ export const services: ServiceDefinition[] = [
     whatsappMessage:
       "Olá! Conheci a Analisarty pelo site e gostaria de entender como funciona o serviço de tráfego pago para minha empresa.",
     icon: "TrendingUp",
+    faqIndices: [3, 8],
   },
   {
     id: "sites",
@@ -81,6 +94,10 @@ export const services: ServiceDefinition[] = [
     headline: "Transforme sua presença digital em uma vitrine profissional.",
     description:
       "Desenvolvemos sites modernos, responsivos e preparados para mecanismos de busca, ajudando sua empresa a transmitir credibilidade e apresentar seus diferenciais.",
+    longDescription:
+      "Um site profissional funciona como a base da sua presença digital, reunindo em um só lugar tudo que o cliente precisa saber sobre a sua empresa. Desenvolvemos com estrutura técnica pensada para mecanismos de busca desde o primeiro dia.",
+    targetAudience:
+      "Empresas que ainda não têm um site ou precisam modernizar a presença digital atual.",
     benefits: [
       "Design profissional e sob medida",
       "Responsividade em qualquer tela",
@@ -92,6 +109,7 @@ export const services: ServiceDefinition[] = [
     whatsappMessage:
       "Olá! Conheci a Analisarty pelo site e gostaria de entender como funciona o serviço de criação de sites profissionais.",
     icon: "LayoutTemplate",
+    faqIndices: [4, 5],
   },
   {
     id: "landing-pages",
@@ -100,6 +118,10 @@ export const services: ServiceDefinition[] = [
     headline: "Páginas criadas para transformar visitantes em oportunidades.",
     description:
       "Criamos páginas estratégicas com comunicação persuasiva, estrutura comercial e chamadas para ação que incentivam o visitante a entrar em contato.",
+    longDescription:
+      "Diferente de um site institucional, a landing page é construída com um único objetivo: converter o visitante em contato. É a página ideal para apoiar uma campanha específica ou o lançamento de uma oferta.",
+    targetAudience:
+      "Empresas que vão rodar campanhas de tráfego pago ou lançar uma oferta específica e precisam de uma página focada em conversão.",
     benefits: [
       "Copywriting focado em conversão",
       "Estrutura comercial validada",
@@ -111,6 +133,7 @@ export const services: ServiceDefinition[] = [
     whatsappMessage:
       "Olá! Conheci a Analisarty pelo site e gostaria de entender como funciona o serviço de criação de landing pages.",
     icon: "MousePointerClick",
+    faqIndices: [5, 8],
   },
   {
     id: "sistemas",
@@ -119,6 +142,10 @@ export const services: ServiceDefinition[] = [
     headline: "Simplifique a gestão e tenha mais controle sobre seu negócio.",
     description:
       "Desenvolvemos aplicativos e sistemas personalizados para ajudar pequenas empresas a organizar informações, automatizar tarefas e melhorar seus processos administrativos.",
+    longDescription:
+      "Um sistema sob medida reduz retrabalho, centraliza informações e dá mais visibilidade sobre o que está acontecendo no dia a dia do negócio. Desenvolvemos de acordo com os processos reais da sua empresa, não um modelo genérico.",
+    targetAudience:
+      "Empresas que ainda dependem de planilhas, papel ou processos manuais para controlar estoque, clientes ou financeiro.",
     benefits: [
       "Sistemas personalizados por negócio",
       "Controle centralizado de informações",
@@ -130,6 +157,7 @@ export const services: ServiceDefinition[] = [
     whatsappMessage:
       "Olá! Conheci a Analisarty pelo site e gostaria de entender como funciona o serviço de aplicativos e sistemas de gestão.",
     icon: "LayoutDashboard",
+    faqIndices: [6, 8],
   },
 ];
 

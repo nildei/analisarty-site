@@ -7,10 +7,12 @@ import { Partners } from "@/components/sections/Partners";
 import { Authority } from "@/components/sections/Authority";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { HomeFaqJsonLd } from "@/components/JsonLd";
 
 export default function Home() {
   return (
     <>
+      <HomeFaqJsonLd />
       <Hero />
       <Problem />
       <Services />

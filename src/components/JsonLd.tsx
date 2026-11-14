@@ -44,12 +44,21 @@ export function JsonLd() {
           "@type": "Service",
           name: service.title,
           description: service.description,
-          url: `${siteConfig.url}/#${service.id}`,
+          url: `${siteConfig.url}/servicos/${service.id}`,
         },
       })),
     },
   };
 
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export function HomeFaqJsonLd() {
   const faqData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -64,15 +73,9 @@ export function JsonLd() {
   };
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
-      />
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+    />
   );
 }

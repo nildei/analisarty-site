@@ -20,10 +20,10 @@ function WhatsAppCta({ className }: { className?: string }) {
 }
 
 const navItems = [
-  { label: "Soluções", href: "#solucoes" },
-  { label: "Como funciona", href: "#como-funciona" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "Dúvidas", href: "#faq" },
+  { label: "Serviços", href: "/servicos" },
+  { label: "Como funciona", href: "/#como-funciona" },
+  { label: "Sobre", href: "/#sobre" },
+  { label: "Dúvidas", href: "/#faq" },
 ];
 
 export function Header() {
@@ -51,13 +51,13 @@ export function Header() {
 
         <nav className="hidden items-center gap-8 lg:flex">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="text-sm font-medium text-white/70 transition-colors hover:text-white"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -78,14 +78,14 @@ export function Header() {
         <div className="border-t border-white/10 bg-navy-950/98 px-5 pb-6 pt-4 lg:hidden">
           <nav className="flex flex-col gap-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className="text-base font-medium text-white/80"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <WhatsAppCta className="mt-2 justify-center" />
           </nav>

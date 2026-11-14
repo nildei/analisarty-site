@@ -21,6 +21,7 @@ function WhatsAppCta({ className }: { className?: string }) {
 
 const navItems = [
   { label: "Serviços", href: "/servicos" },
+  { label: "Blog", href: "/blog" },
   { label: "Como funciona", href: "/#como-funciona" },
   { label: "Sobre", href: "/#sobre" },
   { label: "Dúvidas", href: "/#faq" },

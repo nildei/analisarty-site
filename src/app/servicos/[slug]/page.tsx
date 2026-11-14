@@ -16,6 +16,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { Accordion } from "@/components/ui/Accordion";
 import { services, faqItems, siteConfig, buildWhatsAppLink } from "@/lib/site-config";
+import { blogPosts } from "@/lib/blog-posts";
 
 const iconMap = {
   MapPin,
@@ -62,6 +63,7 @@ export default async function ServicePage({
   const Icon = iconMap[service.icon as keyof typeof iconMap];
   const relatedServices = services.filter((item) => item.id !== service.id);
   const relatedFaq = service.faqIndices.map((index) => faqItems[index]);
+  const relatedPosts = blogPosts.filter((post) => post.relatedServiceIds.includes(service.id));
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -200,6 +202,29 @@ export default async function ServicePage({
             <Reveal delay={0.1} className="mt-10">
               <Accordion items={relatedFaq} />
             </Reveal>
+          </Container>
+        </section>
+      )}
+
+      {relatedPosts.length > 0 && (
+        <section className="py-16 lg:py-20">
+          <Container className="max-w-3xl">
+            <SectionHeading eyebrow="Para saber mais" title="Artigos relacionados" />
+            <div className="mt-8 flex flex-col gap-4">
+              {relatedPosts.map((post) => (
+                <Reveal key={post.slug}>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="group flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition-colors hover:border-blue-400/30"
+                  >
+                    <span className="text-sm font-medium text-white/80 group-hover:text-white">
+                      {post.title}
+                    </span>
+                    <ArrowRight className="size-4 shrink-0 text-blue-300" />
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
           </Container>
         </section>
       )}

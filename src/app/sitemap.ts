@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig, services } from "@/lib/site-config";
+import { blogPosts } from "@/lib/blog-posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -12,6 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.7,
+    })),
+    { url: `${siteConfig.url}/blog`, lastModified, changeFrequency: "weekly", priority: 0.7 },
+    ...blogPosts.map((post) => ({
+      url: `${siteConfig.url}/blog/${post.slug}`,
+      lastModified: new Date(post.publishedAt),
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
     })),
     { url: `${siteConfig.url}/privacidade`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     { url: `${siteConfig.url}/termos`, lastModified, changeFrequency: "yearly", priority: 0.3 },

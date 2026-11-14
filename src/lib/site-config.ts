@@ -12,7 +12,7 @@ export const siteConfig = {
   instagram: "https://www.instagram.com/analisarty",
   instagramHandle: "@analisarty",
   linkedin: "https://www.linkedin.com/in/analisarty-neg%C3%B3cios-online-2117b4355/",
-  areaServed: "Brasil e exterior — atendimento 100% online",
+  areaServed: "Brasil e exterior",
   locale: "pt_BR",
 } as const;
 

@@ -65,6 +65,7 @@ export function Footer() {
           <p className="text-sm font-semibold text-white">Empresa</p>
           <ul className="mt-4 space-y-3">
             <li><Link href="/#sobre" className="text-sm text-white/55 transition-colors hover:text-white">Sobre a Analisarty</Link></li>
+            <li><Link href="/blog" className="text-sm text-white/55 transition-colors hover:text-white">Blog</Link></li>
             <li><Link href="/#faq" className="text-sm text-white/55 transition-colors hover:text-white">Perguntas frequentes</Link></li>
             <li><Link href="/#diagnostico" className="text-sm text-white/55 transition-colors hover:text-white">Diagnóstico gratuito</Link></li>
           </ul>

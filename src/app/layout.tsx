@@ -44,9 +44,13 @@ export const metadata: Metadata = {
     description: siteConfig.description,
   },
   robots: { index: true, follow: true },
-  verification: process.env.GOOGLE_SITE_VERIFICATION
-    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
-    : undefined,
+  verification: (() => {
+    const codes = [
+      process.env.GOOGLE_SITE_VERIFICATION,
+      process.env.GOOGLE_SITE_VERIFICATION_BR,
+    ].filter((code): code is string => Boolean(code));
+    return codes.length > 0 ? { google: codes } : undefined;
+  })(),
 };
 
 export const viewport: Viewport = {

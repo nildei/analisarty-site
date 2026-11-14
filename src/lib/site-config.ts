@@ -6,7 +6,7 @@ export const siteConfig = {
   slogan: "Estratégia, Tecnologia e Crescimento.",
   description:
     "Ajudamos micro e pequenas empresas a serem encontradas, reconhecidas e escolhidas: Perfil da Empresa no Google, tráfego pago, sites, landing pages e sistemas de gestão.",
-  url: "https://analisarty-negocios.vercel.app",
+  url: "https://www.analisarty.com.br",
   whatsappNumber: "5531992637359",
   whatsappDisplay: "+55 31 99263-7359",
   instagram: "https://www.instagram.com/analisarty",

@@ -5,7 +5,7 @@ export const siteConfig = {
   founderRole: "Especialista em Soluções para Negócios",
   slogan: "Estratégia, Tecnologia e Crescimento.",
   description:
-    "Ajudamos micro e pequenas empresas a serem encontradas, reconhecidas e escolhidas: Perfil da Empresa no Google, tráfego pago, sites, landing pages e sistemas de gestão.",
+    "Ajudamos micro e pequenas empresas a serem encontradas, reconhecidas e escolhidas: Perfil da Empresa no Google, tráfego pago, sites e sistemas de gestão.",
   url: "https://www.analisarty.com.br",
   whatsappNumber: "5531992637359",
   whatsappDisplay: "+55 31 99263-7359",

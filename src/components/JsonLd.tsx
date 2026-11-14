@@ -1,4 +1,4 @@
-import { siteConfig } from "@/lib/site-config";
+import { siteConfig, services, faqItems } from "@/lib/site-config";
 
 export function JsonLd() {
   const data = {
@@ -35,12 +35,44 @@ export function JsonLd() {
       "Criação de landing pages",
       "Desenvolvimento de aplicativos e sistemas de gestão",
     ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Serviços Analisarty Negócios Online",
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          description: service.description,
+          url: `${siteConfig.url}/#${service.id}`,
+        },
+      })),
+    },
+  };
+
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
+    </>
   );
 }

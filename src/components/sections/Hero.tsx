@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Eye, ShieldCheck, Users } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -39,6 +40,18 @@ function AuroraBackground() {
 export function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col justify-center overflow-hidden pt-24 pb-10 lg:pt-28">
+      <div className="absolute inset-0 -z-20">
+        <Image
+          src="/images/hero-bg-globe.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-70"
+          style={{ objectPosition: "70% 40%" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/55 to-navy-950/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/50" />
+      </div>
       <AuroraBackground />
       <div className="grid-overlay absolute inset-0 [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
 

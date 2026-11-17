@@ -54,7 +54,7 @@ export default function ServicosPage() {
               <Reveal key={service.id} delay={index * 0.08}>
                 <Link
                   href={`/servicos/${service.id}`}
-                  className="group flex h-full flex-col gap-5 rounded-3xl border border-white/10 bg-white/[0.02] p-7 transition-colors hover:border-blue-400/30"
+                  className="hover-glow group flex h-full flex-col gap-5 rounded-3xl border border-white/10 bg-white/[0.02] p-7 transition-colors hover:border-blue-400/30"
                 >
                   <span className="flex size-12 items-center justify-center rounded-xl bg-blue-500/15 text-blue-300">
                     <Icon className="size-6" />

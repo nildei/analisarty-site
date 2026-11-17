@@ -27,7 +27,7 @@ const sizeClasses = {
 
 function baseStyles(variant: ButtonVariant, size: "md" | "lg", className?: string) {
   return cn(
-    "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 ease-out whitespace-nowrap",
+    "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 ease-out whitespace-nowrap hover:scale-[1.03] active:scale-[0.98]",
     variantClasses[variant],
     sizeClasses[size],
     className,

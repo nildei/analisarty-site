@@ -54,7 +54,7 @@ export function Problem() {
         <div className="mt-14 grid gap-5 sm:grid-cols-2">
           {situations.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.08}>
-              <div className="group h-full rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-blue-400/30 hover:bg-white/[0.04]">
+              <div className="hover-glow group h-full rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-blue-400/30 hover:bg-white/[0.04]">
                 <span className="flex size-11 items-center justify-center rounded-xl bg-blue-500/10 text-blue-300 transition-colors group-hover:bg-blue-500/20">
                   <item.icon className="size-5" />
                 </span>

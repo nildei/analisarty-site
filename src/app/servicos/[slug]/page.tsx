@@ -215,7 +215,7 @@ export default async function ServicePage({
                 <Reveal key={post.slug}>
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="group flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition-colors hover:border-blue-400/30"
+                    className="hover-glow group flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition-colors hover:border-blue-400/30"
                   >
                     <span className="text-sm font-medium text-white/80 group-hover:text-white">
                       {post.title}
@@ -239,7 +239,7 @@ export default async function ServicePage({
                 <Reveal key={item.id} delay={index * 0.08}>
                   <Link
                     href={`/servicos/${item.id}`}
-                    className="group flex h-full flex-col gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-blue-400/30"
+                    className="hover-glow group flex h-full flex-col gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-blue-400/30"
                   >
                     <span className="flex size-11 items-center justify-center rounded-xl bg-blue-500/15 text-blue-300">
                       <RelatedIcon className="size-5" />

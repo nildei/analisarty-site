@@ -51,7 +51,7 @@ export default function BlogPage() {
             <Reveal key={post.slug} delay={index * 0.08}>
               <Link
                 href={`/blog/${post.slug}`}
-                className="group flex h-full flex-col gap-4 rounded-3xl border border-white/10 bg-white/[0.02] p-7 transition-colors hover:border-blue-400/30"
+                className="hover-glow group flex h-full flex-col gap-4 rounded-3xl border border-white/10 bg-white/[0.02] p-7 transition-colors hover:border-blue-400/30"
               >
                 <span className="text-xs font-medium text-white/40">
                   {formatDate(post.publishedAt)}

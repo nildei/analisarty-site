@@ -61,7 +61,7 @@ export function Services() {
               <Reveal key={service.id} delay={index * 0.1}>
                 <article
                   id={service.id}
-                  className="flex h-full flex-col gap-6 rounded-3xl border border-white/10 bg-white/[0.02] p-6 lg:p-7"
+                  className="hover-glow flex h-full flex-col gap-6 rounded-3xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-blue-400/30 lg:p-7"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -119,7 +119,7 @@ export function Services() {
               <Reveal key={service.id} delay={index * 0.1}>
                 <article
                   id={service.id}
-                  className="flex h-full flex-col gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-blue-400/30"
+                  className="hover-glow flex h-full flex-col gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-blue-400/30"
                 >
                   <div className="flex items-center justify-between gap-4">
                     <span className="flex size-11 items-center justify-center rounded-xl bg-blue-500/15 text-blue-300">

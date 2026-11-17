@@ -47,10 +47,11 @@ export function Hero() {
           fill
           priority
           className="object-cover opacity-70"
-          style={{ objectPosition: "70% 40%" }}
+          style={{ objectPosition: "80% 65%" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/55 to-navy-950/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/50" />
+        <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-navy-950 to-transparent sm:h-44" />
       </div>
       <AuroraBackground />
       <div className="grid-overlay absolute inset-0 [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />

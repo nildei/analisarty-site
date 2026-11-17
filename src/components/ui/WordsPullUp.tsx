@@ -1,0 +1,33 @@
+"use client";
+
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+
+interface WordsPullUpProps {
+  text: string;
+  className?: string;
+  delay?: number;
+}
+
+export function WordsPullUp({ text, className = "", delay = 0 }: WordsPullUpProps) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const words = text.split(" ");
+
+  return (
+    <span ref={ref} className="inline-flex flex-wrap">
+      {words.map((word, i) => (
+        <motion.span
+          key={i}
+          initial={{ y: "100%", opacity: 0 }}
+          animate={isInView ? { y: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.6, delay: delay + i * 0.06, ease: [0.16, 1, 0.3, 1] }}
+          className={`inline-block ${className}`}
+          style={{ marginRight: "0.28em" }}
+        >
+          {word}
+        </motion.span>
+      ))}
+    </span>
+  );
+}

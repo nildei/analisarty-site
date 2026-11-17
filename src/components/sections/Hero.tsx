@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Eye, ShieldCheck, Users } from "lucide-react";
+import { ArrowRight, Eye, ShieldCheck, Users } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { WordsPullUp } from "@/components/ui/WordsPullUp";
 import { PhotoMotion } from "@/components/graphics/PhotoMotion";
 import { buildWhatsAppLink, defaultWhatsAppMessage } from "@/lib/site-config";
 
@@ -13,11 +14,33 @@ const benefits = [
   { icon: Users, label: "Mais oportunidades de conquistar clientes" },
 ];
 
+function AuroraBackground() {
+  return (
+    <div className="absolute inset-0 -z-10 overflow-hidden">
+      <motion.div
+        className="absolute -left-40 top-[-10%] h-[560px] w-[560px] rounded-full bg-blue-600/30 blur-[140px]"
+        animate={{ x: [0, 60, -20, 0], y: [0, 40, -30, 0] }}
+        transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        className="absolute right-[-10%] top-[10%] h-[460px] w-[460px] rounded-full bg-blue-400/20 blur-[130px]"
+        animate={{ x: [0, -50, 30, 0], y: [0, 30, 60, 0] }}
+        transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        className="absolute bottom-[-20%] left-1/3 h-[420px] w-[420px] rounded-full bg-blue-500/15 blur-[120px]"
+        animate={{ x: [0, 40, -40, 0], y: [0, -30, 20, 0] }}
+        transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }}
+      />
+    </div>
+  );
+}
+
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-32 pb-24 lg:pt-40 lg:pb-32">
+    <section className="relative flex min-h-screen flex-col justify-center overflow-hidden pt-24 pb-10 lg:pt-28">
+      <AuroraBackground />
       <div className="grid-overlay absolute inset-0 [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
-      <div className="absolute left-1/2 top-0 -z-10 h-[520px] w-[920px] -translate-x-1/2 rounded-full bg-blue-600/25 blur-[140px]" />
 
       <Container className="relative grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
@@ -31,21 +54,17 @@ export function Hero() {
             Estratégia, Tecnologia e Crescimento
           </motion.span>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-[family-name:var(--font-display)] text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[3.4rem]"
-          >
-            Sua empresa merece ser{" "}
-            <span className="text-gradient">encontrada, reconhecida</span> e escolhida pelos clientes.
-          </motion.h1>
+          <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-[3.6rem]">
+            <WordsPullUp text="Sua empresa merece ser" delay={0.1} />{" "}
+            <WordsPullUp text="encontrada, reconhecida" className="text-gradient" delay={0.34} />{" "}
+            <WordsPullUp text="e escolhida pelos clientes." delay={0.46} />
+          </h1>
 
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-6 max-w-xl text-lg leading-relaxed text-white/65"
+            transition={{ duration: 0.6, delay: 0.9 }}
+            className="mt-5 max-w-xl text-base leading-relaxed text-white/65 lg:text-lg"
           >
             Transformamos sua presença digital em oportunidades de negócio. Ajudamos micro e
             pequenas empresas a conquistar mais visibilidade no Google, atrair clientes,
@@ -55,8 +74,8 @@ export function Hero() {
           <motion.ul
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+            transition={{ duration: 0.6, delay: 1.0 }}
+            className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
           >
             {benefits.map((benefit) => (
               <li
@@ -72,12 +91,20 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-10 flex flex-col gap-4 sm:flex-row"
+            transition={{ duration: 0.6, delay: 1.1 }}
+            className="mt-7 flex flex-wrap items-center gap-4"
           >
-            <Button href={buildWhatsAppLink(defaultWhatsAppMessage)} size="lg" showArrow>
+            <a
+              href={buildWhatsAppLink(defaultWhatsAppMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 rounded-full bg-blue-600 py-1.5 pl-6 pr-1.5 text-base font-semibold text-white shadow-[0_18px_40px_-12px_rgba(23,105,255,0.55)] transition-all hover:gap-4 hover:bg-blue-500 hover:shadow-[0_22px_48px_-12px_rgba(23,105,255,0.7)]"
+            >
               Quero fazer minha empresa crescer
-            </Button>
+              <span className="flex size-10 items-center justify-center rounded-full bg-navy-950 transition-transform group-hover:scale-110">
+                <ArrowRight className="size-4 text-white" />
+              </span>
+            </a>
             <Button href="#solucoes" variant="secondary" size="lg">
               Conheça nossas soluções
             </Button>
@@ -89,13 +116,19 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
+            className="relative rounded-[28px] p-[1px]"
+            style={{
+              background: "linear-gradient(135deg, rgba(64,169,255,0.6), rgba(23,105,255,0.05) 40%, rgba(64,169,255,0.4))",
+            }}
           >
-            <PhotoMotion
-              src="/images/hero-pesquisa-google.jpg"
-              alt="Empresário pesquisando no Google e acompanhando indicadores de marketing digital no notebook"
-              className="aspect-video"
-              priority
-            />
+            <div className="rounded-[27px] bg-navy-950 p-2">
+              <PhotoMotion
+                src="/images/hero-pesquisa-google.jpg"
+                alt="Empresário pesquisando no Google e acompanhando indicadores de marketing digital no notebook"
+                className="aspect-video rounded-[20px]"
+                priority
+              />
+            </div>
           </motion.div>
         </div>
       </Container>

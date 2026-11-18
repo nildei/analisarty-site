@@ -52,8 +52,16 @@ export function Hero() {
       className="relative flex min-h-dvh flex-col justify-center overflow-hidden pt-24 pb-10 lg:pt-28"
     >
       <div className="absolute inset-0 -z-20 overflow-hidden">
-        <motion.div className="absolute inset-0" style={{ scale: globeScale }}>
-          <div className="animate-spin-slow absolute -inset-1/3">
+        <motion.div
+          className="absolute inset-0"
+          style={{ scale: globeScale, perspective: "1400px" }}
+        >
+          <motion.div
+            className="absolute -inset-1/4"
+            style={{ transformStyle: "preserve-3d" }}
+            animate={{ rotateY: [-22, 22, -22] }}
+            transition={{ duration: 34, repeat: Infinity, ease: "easeInOut" }}
+          >
             <Image
               src="/images/hero-bg-globe-v2.jpg"
               alt=""
@@ -62,7 +70,7 @@ export function Hero() {
               className="object-cover opacity-60"
               style={{ objectPosition: "75% 45%" }}
             />
-          </div>
+          </motion.div>
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/50 to-navy-950/15" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/55" />
@@ -86,7 +94,7 @@ export function Hero() {
             Estratégia, Tecnologia e Crescimento
           </motion.span>
 
-          <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-[3.6rem]">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold leading-[1.18] tracking-tight text-white sm:text-5xl lg:text-[3.6rem]">
             <WordsPullUp text="Otimização do" delay={0.1} />{" "}
             <WordsPullUp text="Perfil da Empresa no Google" className="text-gradient" delay={0.22} />{" "}
             <WordsPullUp text="para atrair mais clientes." delay={0.58} />

@@ -166,7 +166,7 @@ export const blogPosts: BlogPost[] = [
       "O conceito de SEO local, como o Google decide quais empresas mostrar nas buscas e quais ações realmente ajudam a melhorar a visibilidade.",
     publishedAt: "2026-11-14",
     keywords: ["seo local", "seo para pequenas empresas"],
-    relatedServiceIds: ["google-perfil"],
+    relatedServiceIds: ["seo-local", "google-perfil"],
     sections: [
       {
         heading: "O que é SEO local",

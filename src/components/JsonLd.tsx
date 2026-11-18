@@ -30,7 +30,9 @@ export function JsonLd() {
     priceRange: "$$",
     serviceType: [
       "Otimização do Perfil da Empresa no Google",
+      "SEO Local",
       "Gestão de tráfego pago",
+      "Automação de atendimento pelo WhatsApp",
       "Criação de sites institucionais",
       "Criação de landing pages",
       "Desenvolvimento de aplicativos e sistemas de gestão",
@@ -50,11 +52,32 @@ export function JsonLd() {
     },
   };
 
+  const websiteData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteConfig.fullName,
+    alternateName: siteConfig.name,
+    url: siteConfig.url,
+    inLanguage: "pt-BR",
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.fullName,
+      url: siteConfig.url,
+      logo: `${siteConfig.url}/images/logo-analisarty.png`,
+    },
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
+      />
+    </>
   );
 }
 

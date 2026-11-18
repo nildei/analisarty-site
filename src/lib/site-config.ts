@@ -5,7 +5,7 @@ export const siteConfig = {
   founderRole: "Especialista em Soluções para Negócios",
   slogan: "Estratégia, Tecnologia e Crescimento.",
   description:
-    "Ajudamos micro e pequenas empresas a serem encontradas, reconhecidas e escolhidas: Perfil da Empresa no Google, tráfego pago, sites e sistemas de gestão.",
+    "Aumente a visibilidade da sua empresa no Google com SEO Local, otimização do Perfil da Empresa no Google, tráfego pago e automação. Diagnóstico gratuito.",
   url: "https://www.analisarty.com.br",
   whatsappNumber: "5531992637359",
   whatsappDisplay: "+55 31 99263-7359",
@@ -18,7 +18,9 @@ export const siteConfig = {
 
 export type ServiceId =
   | "google-perfil"
+  | "seo-local"
   | "trafego-pago"
+  | "automacao"
   | "sites"
   | "landing-pages"
   | "sistemas";
@@ -64,6 +66,30 @@ export const services: ServiceDefinition[] = [
     faqIndices: [0, 1, 2],
   },
   {
+    id: "seo-local",
+    tag: "Visibilidade orgânica",
+    title: "SEO Local",
+    headline: "Apareça para quem já procura o que você oferece na sua região.",
+    description:
+      "Trabalhamos SEO Local para melhorar a posição da sua empresa nas buscas regionais, unindo o Perfil da Empresa no Google, o site e as informações consistentes que o Google usa para decidir quem mostrar primeiro.",
+    longDescription:
+      "SEO Local não depende de pagar por anúncios: é um trabalho contínuo sobre relevância, distância e reputação, os três fatores que o próprio Google usa para ordenar os resultados de busca por região. Ajustamos esses pontos de forma consistente entre o perfil, o site e as citações da sua empresa.",
+    targetAudience:
+      "Empresas que atendem uma região específica e querem aparecer de forma orgânica, sem depender apenas de anúncios pagos, quando alguém pesquisa pelos seus serviços.",
+    benefits: [
+      "Auditoria de relevância, distância e reputação",
+      "Consistência de nome, endereço e telefone entre canais",
+      "Otimização do site para buscas regionais",
+      "Estratégia de avaliações e reputação local",
+      "Acompanhamento de posição nas buscas locais",
+    ],
+    cta: "Quero ser encontrado na minha região",
+    whatsappMessage:
+      "Olá! Conheci a Analisarty pelo site e gostaria de entender como funciona a estratégia de SEO Local para minha empresa.",
+    icon: "Search",
+    faqIndices: [0, 10],
+  },
+  {
     id: "trafego-pago",
     tag: "Aceleração",
     title: "Tráfego Pago",
@@ -86,6 +112,30 @@ export const services: ServiceDefinition[] = [
       "Olá! Conheci a Analisarty pelo site e gostaria de entender como funciona o serviço de tráfego pago para minha empresa.",
     icon: "TrendingUp",
     faqIndices: [3, 8],
+  },
+  {
+    id: "automacao",
+    tag: "Produtividade",
+    title: "Automação de Atendimento pelo WhatsApp",
+    headline: "Organize o primeiro contato antes que ele vire uma oportunidade perdida.",
+    description:
+      "Estruturamos a automação do pré-atendimento pelo WhatsApp para organizar contatos, qualificar oportunidades e agilizar a resposta inicial, sem perder o toque humano no momento de negociar.",
+    longDescription:
+      "Grande parte das oportunidades se perde nos primeiros minutos, quando ninguém responde a tempo. A automação cuida do pré-atendimento — recebe, organiza e qualifica o contato — para que sua equipe entre na conversa já sabendo o que a pessoa precisa.",
+    targetAudience:
+      "Empresas que recebem muitos contatos pelo WhatsApp e têm dificuldade de organizar, responder a tempo ou identificar quais contatos realmente têm potencial de venda.",
+    benefits: [
+      "Automação do pré-atendimento",
+      "Organização e qualificação de contatos",
+      "Respostas rápidas para dúvidas frequentes",
+      "Integração com as ferramentas que a empresa já usa",
+      "Equipe entra na conversa só quando faz sentido",
+    ],
+    cta: "Quero organizar meu atendimento",
+    whatsappMessage:
+      "Olá! Conheci a Analisarty pelo site e gostaria de entender como funciona a automação de atendimento pelo WhatsApp para minha empresa.",
+    icon: "Bot",
+    faqIndices: [11, 8],
   },
   {
     id: "sites",
@@ -211,6 +261,16 @@ export const faqItems: { question: string; answer: string }[] = [
     question: "Como solicitar uma avaliação para minha empresa?",
     answer:
       "Basta clicar em qualquer botão de contato do site. Você será direcionado ao WhatsApp da Analisarty para conversar diretamente com um especialista sobre o seu negócio.",
+  },
+  {
+    question: "SEO Local é a mesma coisa que anúncios no Google?",
+    answer:
+      "Não. SEO Local é um trabalho orgânico e contínuo sobre relevância, distância e reputação — não existe pagamento ao Google para aparecer melhor nessas buscas. É diferente do tráfego pago, embora as duas estratégias possam trabalhar juntas.",
+  },
+  {
+    question: "Como funciona a automação de atendimento pelo WhatsApp?",
+    answer:
+      "A automação cuida do pré-atendimento: recebe e organiza os contatos, responde dúvidas frequentes e qualifica quem tem real intenção de compra, para que sua equipe entre na conversa já com contexto, sem perder o toque humano na negociação.",
   },
 ];
 

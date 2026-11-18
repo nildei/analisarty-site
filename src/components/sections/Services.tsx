@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Check, LayoutDashboard, LayoutTemplate, MapPin, MousePointerClick, TrendingUp } from "lucide-react";
+import { ArrowRight, Bot, Check, LayoutDashboard, LayoutTemplate, MapPin, MousePointerClick, Search, TrendingUp } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
@@ -10,7 +10,9 @@ import { services, buildWhatsAppLink } from "@/lib/site-config";
 
 const iconMap = {
   MapPin,
+  Search,
   TrendingUp,
+  Bot,
   LayoutTemplate,
   MousePointerClick,
   LayoutDashboard,

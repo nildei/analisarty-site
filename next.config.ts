@@ -16,6 +16,16 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      { source: "/perfil-da-empresa-no-google", destination: "/servicos/google-perfil", permanent: true },
+      { source: "/seo-local", destination: "/servicos/seo-local", permanent: true },
+      { source: "/trafego-pago", destination: "/servicos/trafego-pago", permanent: true },
+      { source: "/automacao", destination: "/servicos/automacao", permanent: true },
+      { source: "/criacao-de-sites", destination: "/servicos/sites", permanent: true },
+      { source: "/sistemas-de-gestao", destination: "/servicos/sistemas", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -72,9 +72,9 @@ export function Hero() {
           </motion.span>
 
           <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-[3.6rem]">
-            <WordsPullUp text="Sua empresa merece ser" delay={0.1} />{" "}
-            <WordsPullUp text="encontrada, reconhecida" className="text-gradient" delay={0.34} />{" "}
-            <WordsPullUp text="e escolhida pelos clientes." delay={0.46} />
+            <WordsPullUp text="Otimização do" delay={0.1} />{" "}
+            <WordsPullUp text="Perfil da Empresa no Google" className="text-gradient" delay={0.22} />{" "}
+            <WordsPullUp text="para atrair mais clientes." delay={0.58} />
           </h1>
 
           <motion.p
@@ -83,9 +83,10 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.9 }}
             className="mt-5 max-w-xl text-base leading-relaxed text-white/65 lg:text-lg"
           >
-            Transformamos sua presença digital em oportunidades de negócio. Ajudamos micro e
-            pequenas empresas a conquistar mais visibilidade no Google, atrair clientes,
-            fortalecer sua marca e melhorar sua gestão com estratégia, marketing e tecnologia.
+            Ajudamos pequenas e médias empresas a conquistar mais visibilidade no Google e
+            Google Maps, atrair clientes qualificados e fortalecer sua presença digital. Com
+            estratégias de SEO Local, tráfego pago, automação e tecnologia, transformamos
+            oportunidades digitais em crescimento para seu negócio.
           </motion.p>
 
           <motion.ul

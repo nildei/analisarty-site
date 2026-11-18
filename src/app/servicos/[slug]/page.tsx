@@ -3,11 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   ArrowRight,
+  Bot,
   Check,
   LayoutDashboard,
   LayoutTemplate,
   MapPin,
   MousePointerClick,
+  Search,
   TrendingUp,
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -20,7 +22,9 @@ import { blogPosts } from "@/lib/blog-posts";
 
 const iconMap = {
   MapPin,
+  Search,
   TrendingUp,
+  Bot,
   LayoutTemplate,
   MousePointerClick,
   LayoutDashboard,

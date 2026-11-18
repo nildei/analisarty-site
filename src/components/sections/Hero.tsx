@@ -52,14 +52,14 @@ export function Hero() {
     >
       <div className="absolute inset-0 -z-20 overflow-hidden bg-navy-950">
         <motion.div
-          className="absolute inset-y-0 left-0 flex w-full items-center justify-center lg:w-[58%] lg:justify-start lg:pl-[6%]"
+          className="absolute left-0 right-0 top-28 flex justify-center lg:inset-y-0 lg:right-auto lg:top-auto lg:w-[58%] lg:items-center lg:justify-start lg:pl-[6%]"
           style={{ scale: globeScale }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element -- animated GIF must stay unoptimized to keep its rotation */}
           <img
             src="/images/globo-rotacao.gif"
             alt=""
-            className="aspect-[380/335] w-[min(92vw,760px)] max-w-none opacity-80 mix-blend-lighten"
+            className="aspect-[380/335] w-[min(78vw,420px)] max-w-none opacity-80 mix-blend-lighten lg:w-[min(92vw,760px)]"
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/55 to-navy-950/20" />

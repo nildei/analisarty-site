@@ -282,4 +282,52 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "core-update-google-novembro-2026-o-que-fazer",
+    title: "Core update do Google de novembro de 2026: o que a sua empresa deve (e não deve) fazer",
+    metaDescription:
+      "O Google iniciou o core update de novembro de 2026. Veja o que é, por que esperar o fim do rollout para avaliar e o que revisar no seu site.",
+    excerpt:
+      "O Google começou a liberar um novo core update em 10 de novembro de 2026. Entenda o que isso significa e como acompanhar sem tomar decisões precipitadas.",
+    publishedAt: "2026-11-18",
+    keywords: ["core update google", "atualização do google novembro 2026", "seo para pequenas empresas", "queda de tráfego"],
+    relatedServiceIds: ["seo-local", "sites"],
+    sections: [
+      {
+        heading: "O que o Google anunciou",
+        paragraphs: [
+          "Segundo a Search Status Dashboard do Google, o core update de novembro de 2026 começou a ser liberado em 10 de novembro, de forma global e para todos os idiomas. A previsão informada é de que o processo leve até cerca de duas semanas para ser concluído.",
+          "Na comunicação do time Search Central, o Google descreveu a atualização como uma mudança regular, pensada para destacar melhor conteúdos relevantes e satisfatórios para quem pesquisa, em sites de todos os tipos. A mesma descrição foi usada nos core updates anteriores deste ano. Até onde conseguimos verificar, o Google não detalhou objetivos específicos para esta edição.",
+        ],
+      },
+      {
+        heading: "O que é um core update",
+        paragraphs: [
+          "Core updates são ajustes amplos nos sistemas de classificação do Google. Eles não miram um site, um setor ou uma prática específica: mudam a forma como o buscador avalia o conjunto de páginas disponíveis, e por isso posições podem subir ou cair mesmo sem que o seu site tenha mudado.",
+          "Também por isso, uma oscilação durante o rollout não significa necessariamente que algo está errado com o seu site.",
+        ],
+      },
+      {
+        heading: "Por que esperar antes de avaliar",
+        paragraphs: [
+          "A orientação do Google é aguardar o fim do rollout antes de analisar os dados no Search Console. A documentação do Google também sugere esperar pelo menos uma semana após a conclusão para comparar o desempenho com o período anterior.",
+          "Na prática, isso significa evitar reformular o site inteiro ou trocar de estratégia no meio da atualização, já que os números ainda estão em movimento e qualquer conclusão pode ser precipitada.",
+        ],
+      },
+      {
+        heading: "O que vale a pena fazer enquanto isso",
+        paragraphs: [
+          "Dá para se preparar sem mexer em nada drástico. Registre hoje as principais métricas do Search Console (cliques, impressões e páginas mais acessadas) para ter uma base de comparação quando a atualização terminar.",
+          "Aproveite também para revisar o básico: se as páginas respondem de fato ao que o cliente procura, se as informações de contato e serviços estão corretas e atualizadas, e se o site carrega e funciona bem no celular.",
+        ],
+      },
+      {
+        heading: "E se houver queda depois do fim do rollout",
+        paragraphs: [
+          "Se, passado o período recomendado, houver queda relevante, o caminho é comparar as páginas afetadas com o que aparece nos primeiros resultados e identificar onde o seu conteúdo é menos útil, claro ou completo. Melhorias de conteúdo costumam ser mais produtivas do que ajustes técnicos isolados.",
+          "Para negócios locais, vale lembrar que o Perfil da Empresa no Google e as avaliações também influenciam a visibilidade, e que a recuperação, quando acontece, não tem prazo garantido.",
+        ],
+      },
+    ],
+  },
 ];

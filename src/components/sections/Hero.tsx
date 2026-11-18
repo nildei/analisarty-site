@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Eye, ShieldCheck, Users } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -51,28 +50,19 @@ export function Hero() {
       ref={sectionRef}
       className="relative flex min-h-dvh flex-col justify-center overflow-hidden pt-24 pb-10 lg:pt-28"
     >
-      <div className="absolute inset-0 -z-20 overflow-hidden">
+      <div className="absolute inset-0 -z-20 overflow-hidden bg-navy-950">
         <motion.div
-          className="absolute inset-0"
-          style={{ scale: globeScale, perspective: "1400px" }}
+          className="absolute inset-y-0 left-0 flex w-full items-center justify-center lg:w-[58%] lg:justify-start lg:pl-[6%]"
+          style={{ scale: globeScale }}
         >
-          <motion.div
-            className="absolute -inset-1/4"
-            style={{ transformStyle: "preserve-3d" }}
-            animate={{ rotateY: [-22, 22, -22] }}
-            transition={{ duration: 34, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <Image
-              src="/images/hero-bg-globe-v2.jpg"
-              alt=""
-              fill
-              priority
-              className="object-cover opacity-60"
-              style={{ objectPosition: "75% 45%" }}
-            />
-          </motion.div>
+          {/* eslint-disable-next-line @next/next/no-img-element -- animated GIF must stay unoptimized to keep its rotation */}
+          <img
+            src="/images/globo-rotacao.gif"
+            alt=""
+            className="aspect-[380/335] w-[min(92vw,760px)] max-w-none opacity-80 mix-blend-lighten"
+          />
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/50 to-navy-950/15" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/55 to-navy-950/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/55" />
         {/* Solid block matches the fixed header's own height (h-28 = 112px) so the
             background art never shows through behind the logo, on any screen size. */}

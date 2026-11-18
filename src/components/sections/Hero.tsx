@@ -1,7 +1,8 @@
 "use client";
 
+import { useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Eye, ShieldCheck, Users } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -38,17 +39,31 @@ function AuroraBackground() {
 }
 
 export function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+  const globeScale = useTransform(scrollYProgress, [0, 1], [1, 0.55]);
+
   return (
-    <section className="relative flex min-h-dvh flex-col justify-center overflow-hidden pt-24 pb-10 lg:pt-28">
-      <div className="absolute inset-0 -z-20">
-        <Image
-          src="/images/hero-bg-globe-v2.jpg"
-          alt=""
-          fill
-          priority
-          className="object-cover opacity-60"
-          style={{ objectPosition: "75% 45%" }}
-        />
+    <section
+      ref={sectionRef}
+      className="relative flex min-h-dvh flex-col justify-center overflow-hidden pt-24 pb-10 lg:pt-28"
+    >
+      <div className="absolute inset-0 -z-20 overflow-hidden">
+        <motion.div className="absolute inset-0" style={{ scale: globeScale }}>
+          <div className="animate-spin-slow absolute -inset-1/3">
+            <Image
+              src="/images/hero-bg-globe-v2.jpg"
+              alt=""
+              fill
+              priority
+              className="object-cover opacity-60"
+              style={{ objectPosition: "75% 45%" }}
+            />
+          </div>
+        </motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/50 to-navy-950/15" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/55" />
         {/* Solid block matches the fixed header's own height (h-28 = 112px) so the

@@ -32,14 +32,14 @@ export const blogPosts: BlogPost[] = [
         heading: "O que é o Perfil da Empresa no Google",
         paragraphs: [
           "O Perfil da Empresa no Google (antigo Google Meu Negócio) é a ficha gratuita que aparece quando alguém pesquisa o nome da sua empresa ou um serviço que você oferece. Ele mostra informações como endereço, horário de funcionamento, telefone, fotos e avaliações diretamente nos resultados de busca e no Google Maps.",
-          "Para quem atende clientes locais, esse perfil costuma ser o primeiro contato entre a empresa e quem está pesquisando — muitas vezes antes mesmo de a pessoa visitar um site.",
+          "Para quem atende clientes locais, esse perfil costuma ser o primeiro contato entre a empresa e quem está pesquisando, muitas vezes antes mesmo de a pessoa visitar um site.",
         ],
       },
       {
         heading: "Por que o perfil importa para pequenas empresas",
         paragraphs: [
           "O Google avalia três fatores principais para decidir quais empresas mostrar em uma busca local: relevância (o quanto o perfil corresponde ao que a pessoa procura), distância (a proximidade entre quem pesquisa e a empresa) e reputação (avaliações e informações consistentes).",
-          "Um perfil incompleto ou desatualizado perde relevância mesmo que a empresa seja exatamente o que o cliente procura — porque o Google não tem informação suficiente para confirmar isso.",
+          "Um perfil incompleto ou desatualizado perde relevância mesmo que a empresa seja exatamente o que o cliente procura, porque o Google não tem informação suficiente para confirmar isso.",
         ],
       },
       {
@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
           "Descrição clara dos serviços oferecidos, sem tentar forçar palavras-chave de forma artificial.",
           "Fotos reais e atualizadas do espaço, produtos ou equipe.",
           "Horário de funcionamento sempre correto, incluindo feriados e horários especiais.",
-          "Avaliações respondidas — tanto as positivas quanto as negativas.",
+          "Avaliações respondidas, tanto as positivas quanto as negativas.",
         ],
       },
       {
@@ -84,7 +84,7 @@ export const blogPosts: BlogPost[] = [
         heading: "O que é tráfego pago e como funciona",
         paragraphs: [
           "Tráfego pago é o conjunto de estratégias para colocar anúncios em plataformas como Google e redes sociais, pagando para que sua empresa apareça para pessoas com características e interesses específicos.",
-          "Diferente do alcance orgânico, o resultado aparece de forma mais rápida — mas depende de planejamento e acompanhamento constante para não desperdiçar orçamento.",
+          "Diferente do alcance orgânico, o resultado aparece de forma mais rápida, mas depende de planejamento e acompanhamento constante para não desperdiçar orçamento.",
         ],
       },
       {
@@ -131,7 +131,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "O que é um site institucional",
         paragraphs: [
-          "O site institucional apresenta a empresa como um todo: quem ela é, o que oferece, onde atua e como entrar em contato. É a referência principal da sua presença digital — o lugar para onde qualquer outro canal (redes sociais, Google, anúncios) pode direcionar quem quer conhecer melhor o negócio.",
+          "O site institucional apresenta a empresa como um todo: quem ela é, o que oferece, onde atua e como entrar em contato. É a referência principal da sua presença digital: o lugar para onde qualquer outro canal (redes sociais, Google, anúncios) pode direcionar quem quer conhecer melhor o negócio.",
         ],
       },
       {
@@ -151,7 +151,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Como saber qual você precisa agora",
         paragraphs: [
-          "Se sua empresa ainda não tem uma presença digital de referência, o site institucional costuma ser o ponto de partida. Se você já tem uma oferta específica para divulgar — um serviço, uma promoção, um lançamento — a landing page tende a converter melhor para esse objetivo pontual.",
+          "Se sua empresa ainda não tem uma presença digital de referência, o site institucional costuma ser o ponto de partida. Se você já tem uma oferta específica para divulgar, como um serviço, uma promoção ou um lançamento, a landing page tende a converter melhor para esse objetivo pontual.",
           "Não é incomum usar as duas ao mesmo tempo: o site como base e landing pages específicas para cada campanha.",
         ],
       },
@@ -171,14 +171,14 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "O que é SEO local",
         paragraphs: [
-          "SEO local é o conjunto de práticas para melhorar a visibilidade de uma empresa em buscas feitas por pessoas de uma determinada região — por exemplo, 'perto de mim' ou pesquisas que já incluem um bairro ou cidade.",
+          "SEO local é o conjunto de práticas para melhorar a visibilidade de uma empresa em buscas feitas por pessoas de uma determinada região, por exemplo buscas como 'perto de mim' ou pesquisas que já incluem um bairro ou cidade.",
         ],
       },
       {
         heading: "Como o Google decide quais empresas mostrar",
         paragraphs: [
           "O próprio Google explica que a ordem dos resultados locais considera relevância, distância e reputação. Relevância é o quanto o perfil e o site da empresa correspondem ao que foi pesquisado. Distância é a proximidade entre quem pesquisa e o endereço da empresa. Reputação envolve avaliações e a quantidade de informações confiáveis disponíveis sobre o negócio.",
-          "Nenhum desses fatores garante uma posição fixa — e por isso é importante não confiar em promessas de 'primeiro lugar garantido', que não refletem como a busca realmente funciona.",
+          "Nenhum desses fatores garante uma posição fixa, e por isso é importante não confiar em promessas de 'primeiro lugar garantido', que não refletem como a busca realmente funciona.",
         ],
       },
       {
@@ -193,7 +193,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "SEO local não é a mesma coisa que anúncios pagos",
         paragraphs: [
-          "SEO local é um trabalho orgânico e contínuo — não existe pagamento direto ao Google para aparecer melhor nessas buscas. Isso é diferente do tráfego pago, onde a empresa paga para aparecer em destaque. As duas estratégias podem (e costumam) trabalhar juntas, mas resolvem problemas diferentes.",
+          "SEO local é um trabalho orgânico e contínuo: não existe pagamento direto ao Google para aparecer melhor nessas buscas. Isso é diferente do tráfego pago, onde a empresa paga para aparecer em destaque. As duas estratégias podem (e costumam) trabalhar juntas, mas resolvem problemas diferentes.",
         ],
       },
     ],
@@ -220,14 +220,14 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "O que um sistema de gestão sob medida pode resolver",
         paragraphs: [
-          "Um sistema desenvolvido para os processos reais da empresa centraliza as informações em um único lugar, reduz retrabalho e dá mais visibilidade sobre estoque, clientes e financeiro — sem depender de múltiplas planilhas desconectadas.",
+          "Um sistema desenvolvido para os processos reais da empresa centraliza as informações em um único lugar, reduz retrabalho e dá mais visibilidade sobre estoque, clientes e financeiro, sem depender de múltiplas planilhas desconectadas.",
         ],
       },
       {
         heading: "Sistema pronto (genérico) x sistema sob medida",
         paragraphs: [
           "Um sistema pronto resolve parte dos problemas rapidamente, mas costuma trazer funções que a empresa nunca vai usar e faltar funções específicas que ela realmente precisa.",
-          "Um sistema sob medida é desenvolvido a partir dos processos reais do negócio — por isso tende a se encaixar melhor na rotina de quem vai usá-lo todos os dias.",
+          "Um sistema sob medida é desenvolvido a partir dos processos reais do negócio, por isso tende a se encaixar melhor na rotina de quem vai usá-lo todos os dias.",
         ],
       },
       {
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "3. Falta de uma chamada para ação clara",
         paragraphs: [
-          "Se o visitante chega ao site ou ao perfil e não sabe exatamente o que fazer a seguir — ligar, mandar mensagem, visitar a loja — a chance de ele simplesmente sair é alta.",
+          "Se o visitante chega ao site ou ao perfil e não sabe exatamente o que fazer a seguir (ligar, mandar mensagem, visitar a loja), a chance de ele simplesmente sair é alta.",
         ],
       },
       {

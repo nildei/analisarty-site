@@ -32,7 +32,7 @@ export function Process() {
           eyebrow="Diferencial consultivo"
           align="center"
           title="Antes de oferecer uma solução, queremos entender o seu negócio."
-          description="Cada empresa possui desafios diferentes. Por isso, nosso trabalho começa entendendo sua realidade — você não precisa contratar tudo de uma vez. Apresentamos um caminho estratégico, respeitando suas necessidades."
+          description="Cada empresa possui desafios diferentes. Por isso, nosso trabalho começa entendendo sua realidade: você não precisa contratar tudo de uma vez. Apresentamos um caminho estratégico, respeitando suas necessidades."
           className="mx-auto"
         />
 

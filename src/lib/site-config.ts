@@ -12,7 +12,7 @@ export const siteConfig = {
   instagram: "https://www.instagram.com/analisarty",
   instagramHandle: "@analisarty",
   linkedin: "https://www.linkedin.com/in/analisarty-neg%C3%B3cios-online-2117b4355/",
-  areaServed: "Brasil e exterior",
+  areaServed: "Contagem, região metropolitana de Belo Horizonte e todo o Brasil",
   locale: "pt_BR",
 } as const;
 
@@ -75,7 +75,7 @@ export const services: ServiceDefinition[] = [
     longDescription:
       "SEO Local não depende de pagar por anúncios: é um trabalho contínuo sobre relevância, distância e reputação, os três fatores que o próprio Google usa para ordenar os resultados de busca por região. Ajustamos esses pontos de forma consistente entre o perfil, o site e as citações da sua empresa.",
     targetAudience:
-      "Empresas que atendem uma região específica e querem aparecer de forma orgânica, sem depender apenas de anúncios pagos, quando alguém pesquisa pelos seus serviços.",
+      "Empresas que atendem uma região específica, como Contagem e cidades vizinhas da região metropolitana de Belo Horizonte, e querem aparecer de forma orgânica, sem depender apenas de anúncios pagos, quando alguém pesquisa pelos seus serviços.",
     benefits: [
       "Auditoria de relevância, distância e reputação",
       "Consistência de nome, endereço e telefone entre canais",
@@ -121,7 +121,7 @@ export const services: ServiceDefinition[] = [
     description:
       "Estruturamos a automação do pré-atendimento pelo WhatsApp para organizar contatos, qualificar oportunidades e agilizar a resposta inicial, sem perder o toque humano no momento de negociar.",
     longDescription:
-      "Grande parte das oportunidades se perde nos primeiros minutos, quando ninguém responde a tempo. A automação cuida do pré-atendimento — recebe, organiza e qualifica o contato — para que sua equipe entre na conversa já sabendo o que a pessoa precisa.",
+      "Grande parte das oportunidades se perde nos primeiros minutos, quando ninguém responde a tempo. A automação cuida do pré-atendimento: recebe, organiza e qualifica o contato, para que sua equipe entre na conversa já sabendo o que a pessoa precisa.",
     targetAudience:
       "Empresas que recebem muitos contatos pelo WhatsApp e têm dificuldade de organizar, responder a tempo ou identificar quais contatos realmente têm potencial de venda.",
     benefits: [
@@ -225,7 +225,7 @@ export const faqItems: { question: string; answer: string }[] = [
   {
     question: "Quanto tempo leva para melhorar o posicionamento no Google?",
     answer:
-      "Varia conforme o segmento, a concorrência local e o ponto de partida da sua empresa. Não prometemos prazos fixos ou primeira posição garantida — trabalhamos com estratégias consistentes para melhorar sua relevância ao longo do tempo.",
+      "Varia conforme o segmento, a concorrência local e o ponto de partida da sua empresa. Não prometemos prazos fixos ou primeira posição garantida. Trabalhamos com estratégias consistentes para melhorar sua relevância ao longo do tempo.",
   },
   {
     question: "A Analisarty também trabalha com tráfego pago?",
@@ -240,7 +240,7 @@ export const faqItems: { question: string; answer: string }[] = [
   {
     question: "Qual a diferença entre site institucional e landing page?",
     answer:
-      "O site institucional apresenta a empresa como um todo: serviços, história e canais de contato. A landing page é focada em um objetivo específico — como uma campanha ou oferta — com estrutura voltada para conversão.",
+      "O site institucional apresenta a empresa como um todo: serviços, história e canais de contato. A landing page é focada em um objetivo específico, como uma campanha ou oferta, com estrutura voltada para conversão.",
   },
   {
     question: "É possível criar um sistema de gestão personalizado?",
@@ -265,7 +265,7 @@ export const faqItems: { question: string; answer: string }[] = [
   {
     question: "SEO Local é a mesma coisa que anúncios no Google?",
     answer:
-      "Não. SEO Local é um trabalho orgânico e contínuo sobre relevância, distância e reputação — não existe pagamento ao Google para aparecer melhor nessas buscas. É diferente do tráfego pago, embora as duas estratégias possam trabalhar juntas.",
+      "Não. SEO Local é um trabalho orgânico e contínuo sobre relevância, distância e reputação: não existe pagamento ao Google para aparecer melhor nessas buscas. É diferente do tráfego pago, embora as duas estratégias possam trabalhar juntas.",
   },
   {
     question: "Como funciona a automação de atendimento pelo WhatsApp?",

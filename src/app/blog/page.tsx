@@ -42,7 +42,7 @@ export default function BlogPage() {
           eyebrow="Blog"
           align="center"
           title="Conteúdo sobre presença digital para pequenas empresas."
-          description="Artigos sobre Perfil da Empresa no Google, SEO local, tráfego pago, sites e gestão — sem fórmulas prontas, sem promessas de resultado garantido."
+          description="Artigos sobre Perfil da Empresa no Google, SEO local, tráfego pago, sites e gestão, sem fórmulas prontas e sem promessas de resultado garantido."
           className="mx-auto"
         />
 

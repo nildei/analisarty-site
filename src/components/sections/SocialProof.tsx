@@ -66,7 +66,7 @@ export function SocialProof() {
             <Quote className="size-6 text-blue-400" />
             <p className="max-w-xl text-sm text-white/50">
               Mais projetos e depoimentos reais de clientes serão publicados aqui conforme
-              documentados e autorizados — sem textos fictícios ou números inventados.
+              documentados e autorizados, sem textos fictícios ou números inventados.
             </p>
           </div>
         </Reveal>

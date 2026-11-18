@@ -15,10 +15,20 @@ export function JsonLd() {
       name: siteConfig.founder,
       jobTitle: siteConfig.founderRole,
     },
-    areaServed: {
-      "@type": "Country",
-      name: "BR",
-    },
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Contagem",
+        containedInPlace: {
+          "@type": "State",
+          name: "Minas Gerais",
+        },
+      },
+      {
+        "@type": "Country",
+        name: "BR",
+      },
+    ],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",

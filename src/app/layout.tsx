@@ -26,6 +26,8 @@ export const metadata: Metadata = {
     "otimização Google Maps",
     "como aparecer no Google Maps",
     "agência de SEO Local",
+    "marketing digital em Contagem",
+    "SEO Local em Contagem e região",
     "marketing digital para pequenas empresas",
     "gestão de tráfego pago",
     "automação de atendimento pelo WhatsApp",

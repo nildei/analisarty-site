@@ -17,6 +17,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { Accordion } from "@/components/ui/Accordion";
+import { PhotoMotion } from "@/components/graphics/PhotoMotion";
 import { services, faqItems, siteConfig, buildWhatsAppLink } from "@/lib/site-config";
 import { blogPosts } from "@/lib/blog-posts";
 
@@ -28,6 +29,37 @@ const iconMap = {
   LayoutTemplate,
   MousePointerClick,
   LayoutDashboard,
+};
+
+const imageMap: Record<string, { src: string; alt: string }> = {
+  "google-perfil": {
+    src: "/images/servico-google-perfil.png",
+    alt: "Ícones de perfil, localização, avaliações e segurança representando a otimização do Perfil da Empresa no Google",
+  },
+  "seo-local": {
+    src: "/images/servico-seo-local.png",
+    alt: "Pessoa pesquisando um estabelecimento no mapa do celular em frente a uma loja, representando SEO Local",
+  },
+  "trafego-pago": {
+    src: "/images/trafego-pago-ads.jpg",
+    alt: "Painel do Google Ads com métricas de uma campanha de tráfego pago",
+  },
+  automacao: {
+    src: "/images/servico-automacao.png",
+    alt: "Atendente com headset acompanhando conversas de atendimento no computador e no celular",
+  },
+  sites: {
+    src: "/images/servico-sites.png",
+    alt: "Site responsivo exibido em laptop, tablet e celular",
+  },
+  "landing-pages": {
+    src: "/images/servico-landing-pages.png",
+    alt: "Funil de conversão com crescimento de resultados exibido em um notebook",
+  },
+  sistemas: {
+    src: "/images/sistema-autogestao.jpg",
+    alt: "Sistema de gestão desenvolvido pela Analisarty, com dashboard de clientes, estoque e financeiro",
+  },
 };
 
 export function generateStaticParams() {
@@ -65,6 +97,7 @@ export default async function ServicePage({
   if (!service) notFound();
 
   const Icon = iconMap[service.icon as keyof typeof iconMap];
+  const image = imageMap[service.id];
   const relatedServices = services.filter((item) => item.id !== service.id);
   const relatedFaq = service.faqIndices.map((index) => faqItems[index]);
   const relatedPosts = blogPosts.filter((post) => post.relatedServiceIds.includes(service.id));
@@ -131,46 +164,69 @@ export default async function ServicePage({
         <div className="grid-overlay absolute inset-0 [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
         <div className="absolute left-1/2 top-0 -z-10 h-[520px] w-[920px] -translate-x-1/2 rounded-full bg-blue-600/25 blur-[140px]" />
 
-        <Container className="relative max-w-3xl">
-          <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-white/40">
-            <Link href="/" className="hover:text-white/70">
-              Início
-            </Link>
-            <span>/</span>
-            <Link href="/servicos" className="hover:text-white/70">
-              Serviços
-            </Link>
-            <span>/</span>
-            <span className="text-white/60">{service.title}</span>
-          </nav>
+        <Container className="relative grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="max-w-3xl">
+            <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-white/40">
+              <Link href="/" className="hover:text-white/70">
+                Início
+              </Link>
+              <span>/</span>
+              <Link href="/servicos" className="hover:text-white/70">
+                Serviços
+              </Link>
+              <span>/</span>
+              <span className="text-white/60">{service.title}</span>
+            </nav>
 
-          <Reveal>
-            <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-blue-300">
-              <span className="size-1.5 rounded-full bg-blue-400" />
-              {service.tag}
-            </span>
-          </Reveal>
+            <Reveal>
+              <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-blue-300">
+                <span className="size-1.5 rounded-full bg-blue-400" />
+                {service.tag}
+              </span>
+            </Reveal>
 
-          <Reveal delay={0.08}>
-            <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-              {service.title}
-            </h1>
-          </Reveal>
+            <Reveal delay={0.08}>
+              <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
+                {service.title}
+              </h1>
+            </Reveal>
 
-          <Reveal delay={0.16}>
-            <p className="mt-6 text-lg leading-relaxed text-white/65">{service.longDescription}</p>
-          </Reveal>
+            <Reveal delay={0.16}>
+              <p className="mt-6 text-lg leading-relaxed text-white/65">{service.longDescription}</p>
+            </Reveal>
 
-          <Reveal delay={0.24}>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button href={buildWhatsAppLink(service.whatsappMessage)} size="lg" showArrow>
-                {service.cta}
-              </Button>
-              <Button href="/servicos" variant="secondary" size="lg">
-                Ver todos os serviços
-              </Button>
-            </div>
-          </Reveal>
+            <Reveal delay={0.24}>
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                <Button href={buildWhatsAppLink(service.whatsappMessage)} size="lg" showArrow>
+                  {service.cta}
+                </Button>
+                <Button href="/servicos" variant="secondary" size="lg">
+                  Ver todos os serviços
+                </Button>
+              </div>
+            </Reveal>
+          </div>
+
+          {image && (
+            <Reveal delay={0.3} className="relative mx-auto w-full max-w-md lg:max-w-none">
+              <div
+                className="relative rounded-[28px] p-[1px]"
+                style={{
+                  background:
+                    "linear-gradient(135deg, rgba(64,169,255,0.6), rgba(23,105,255,0.05) 40%, rgba(64,169,255,0.4))",
+                }}
+              >
+                <div className="rounded-[27px] bg-navy-950 p-2">
+                  <PhotoMotion
+                    src={image.src}
+                    alt={image.alt}
+                    className="aspect-video rounded-[20px]"
+                    priority
+                  />
+                </div>
+              </div>
+            </Reveal>
+          )}
         </Container>
       </section>
 

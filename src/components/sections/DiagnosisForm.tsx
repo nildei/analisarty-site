@@ -159,7 +159,7 @@ export function DiagnosisForm() {
 
       <p className="mt-4 flex items-center gap-2 text-xs text-white/40">
         <ShieldCheck className="size-3.5" />
-        Seus dados abrem uma conversa direta no WhatsApp — nada é enviado a terceiros.
+        Seus dados abrem uma conversa direta no WhatsApp. Nada é enviado a terceiros.
       </p>
     </form>
   );

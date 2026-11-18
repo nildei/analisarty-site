@@ -52,14 +52,14 @@ export function Hero() {
     >
       <div className="absolute inset-0 -z-20 overflow-hidden bg-navy-950">
         <motion.div
-          className="absolute left-0 right-0 top-28 flex justify-center lg:inset-y-0 lg:right-auto lg:top-auto lg:w-[58%] lg:items-center lg:justify-start lg:pl-[6%]"
+          className="absolute left-1/2 top-28 flex -translate-x-1/2 justify-center lg:inset-0 lg:top-0 lg:translate-x-0 lg:items-center lg:justify-center"
           style={{ scale: globeScale }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element -- animated GIF must stay unoptimized to keep its rotation */}
+          {/* eslint-disable-next-line @next/next/no-img-element -- animated PNG must stay unoptimized to keep its rotation */}
           <img
-            src="/images/globo-rotacao.gif"
+            src="/images/globo-rotacao.png"
             alt=""
-            className="aspect-[380/335] w-[min(78vw,420px)] max-w-none opacity-80 mix-blend-lighten lg:w-[min(92vw,760px)]"
+            className="w-[min(85vw,480px)] max-w-none lg:w-[min(72vw,1150px)]"
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/55 to-navy-950/20" />
@@ -72,7 +72,7 @@ export function Hero() {
       <AuroraBackground />
       <div className="grid-overlay absolute inset-0 [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
 
-      <Container className="relative grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <Container className="relative grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
         <div>
           <motion.span
             initial={{ opacity: 0, y: 10 }}
@@ -142,7 +142,7 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+        <div className="relative mx-auto w-full max-w-md lg:max-w-none lg:mt-[52px]">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

@@ -117,7 +117,9 @@ export default async function BlogPostPage({
           </nav>
 
           <Reveal>
-            <span className="text-xs font-medium text-white/40">{formatDate(post.publishedAt)}</span>
+            <span className="text-xs font-medium text-white/40">
+              {formatDate(post.publishedAt)} · Por {siteConfig.founder}
+            </span>
           </Reveal>
 
           <Reveal delay={0.08}>
@@ -146,6 +148,26 @@ export default async function BlogPostPage({
               </Reveal>
             ))}
           </div>
+
+          {post.sources && post.sources.length > 0 && (
+            <Reveal className="mt-10">
+              <p className="text-sm font-semibold text-white/50">Fontes:</p>
+              <ul className="mt-3 space-y-1.5">
+                {post.sources.map((source) => (
+                  <li key={source.url}>
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-blue-300 underline decoration-blue-300/30 underline-offset-2 hover:text-blue-200"
+                    >
+                      {source.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          )}
 
           <Reveal className="mt-14">
             <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-7">

@@ -5,6 +5,11 @@ export interface BlogSection {
   paragraphs: string[];
 }
 
+export interface BlogSource {
+  name: string;
+  url: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -14,6 +19,7 @@ export interface BlogPost {
   keywords: string[];
   relatedServiceIds: ServiceId[];
   sections: BlogSection[];
+  sources?: BlogSource[];
 }
 
 export const blogPosts: BlogPost[] = [

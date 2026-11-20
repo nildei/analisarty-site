@@ -336,4 +336,57 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "botao-mensagem-google-maps-whatsapp-perfil-empresa",
+    title: "Botão de mensagem no Google Maps: como preparar o Perfil da Empresa para receber conversas",
+    metaDescription:
+      "O Google ampliou o envio de mensagens para empresas no Maps. Veja o que mudou e o que revisar no Perfil da Empresa e no atendimento por WhatsApp.",
+    excerpt:
+      "Segundo a imprensa especializada, o Google ampliou o acesso às mensagens para empresas no Google Maps. Veja o que revisar para estar pronto para responder.",
+    publishedAt: "2026-11-20",
+    keywords: ["mensagens google maps", "perfil da empresa no google", "whatsapp business", "atendimento ao cliente"],
+    relatedServiceIds: ["google-perfil", "automacao"],
+    sections: [
+      {
+        heading: "O que foi noticiado",
+        paragraphs: [
+          "O Search Engine Roundtable noticiou em 6 de novembro de 2026 que o Google ampliou o envio de mensagens para empresas no Google Maps, nos aplicativos para iOS e Android. De acordo com a reportagem, a informação veio do boletim mensal para pequenas empresas do Google, comentado por Lisa Landsman nos Fóruns de Ajuda do Google Business.",
+          "Ainda segundo a reportagem, o cliente passa a ver um botão de mensagem ao lado do botão de ligar na ficha da empresa no Maps. Antes, esse recurso ficava mais escondido dentro do perfil. A fonte é um veículo de notícias, e não uma página oficial do Google, então vale conferir a disponibilidade no seu próprio perfil.",
+        ],
+      },
+      {
+        heading: "Por que isso importa para quem atende clientes locais",
+        paragraphs: [
+          "Quem pesquisa uma empresa no Maps normalmente quer resolver algo rápido: tirar uma dúvida, confirmar um horário ou pedir um orçamento. Um botão de mensagem visível dá a essas pessoas mais um caminho de contato além da ligação.",
+          "Isso também significa que a empresa precisa estar pronta para responder. Um canal de contato aberto e sem resposta pode ser pior do que não ter o canal.",
+        ],
+      },
+      {
+        heading: "O que revisar no Perfil da Empresa",
+        paragraphs: [
+          "Segundo a reportagem, as mensagens podem ser encaminhadas para canais como WhatsApp e SMS. Por isso, vale entrar no seu Perfil da Empresa e conferir se o canal de mensagens que você realmente usa está configurado e funcionando.",
+          "Aproveite para revisar telefone, horário de funcionamento (inclusive feriados) e a descrição dos serviços, para que a resposta automática ou manual seja coerente com o que está no perfil.",
+        ],
+      },
+      {
+        heading: "Como organizar o atendimento por mensagem",
+        paragraphs: [
+          "Defina quem responde, em quais horários e em quanto tempo. Para empresas pequenas, uma regra simples já ajuda: responder dentro do horário comercial e avisar claramente quando a equipe está fora.",
+          "O WhatsApp Business oferece recursos como mensagem de ausência, mensagem de saudação e respostas rápidas, que ajudam a manter um padrão sem depender de digitar tudo manualmente. Se o volume de conversas crescer, também é possível avaliar fluxos de automação, sempre com a opção de falar com uma pessoa.",
+        ],
+      },
+      {
+        heading: "Próximo passo",
+        paragraphs: [
+          "Comece pelo básico: confira o perfil, teste o canal de mensagens como se fosse um cliente e veja quanto tempo a sua equipe leva para responder. Se quiser apoio para revisar o Perfil da Empresa e organizar o atendimento por WhatsApp, a Analisarty pode ajudar.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        name: "Search Engine Roundtable: Google Expands Business Messaging To Google Maps On iOS & Android",
+        url: "https://seroundtable.com/google-maps-messaging-android-ios-42472.html",
+      },
+    ],
+  },
 ];

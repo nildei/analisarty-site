@@ -9,6 +9,8 @@ const cases = [
     name: "Basic Fit Academia",
     segment: "Academia e saúde",
     image: "/images/case-basicfit.jpg",
+    imageAspect: "aspect-video",
+    badge: "Site no ar",
     description:
       "Site institucional responsivo para apresentar modalidades, planos e estrutura da academia, com navegação rápida e integração direta com WhatsApp.",
   },
@@ -16,8 +18,19 @@ const cases = [
     name: "CM Multimarcas",
     segment: "Revenda de veículos",
     image: "/images/case-cmmultimarcas.jpg",
+    imageAspect: "aspect-video",
+    badge: "Site no ar",
     description:
       "Site para revenda de veículos com estoque em destaque, simulação de financiamento e avaliação de usados, pensado para gerar contato qualificado.",
+  },
+  {
+    name: "Evolux",
+    segment: "Produtividade e metas",
+    image: "/images/case-evolux.png",
+    imageAspect: "aspect-square",
+    badge: "App no ar",
+    description:
+      "Aplicativo desenvolvido para a Evolux acompanhar tarefas e metas diretamente pelo celular, com login próprio e identidade visual exclusiva da marca.",
   },
 ];
 
@@ -33,18 +46,18 @@ export function SocialProof() {
           className="mx-auto"
         />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {cases.map((item, index) => (
             <Reveal key={item.name} delay={index * 0.1}>
               <article className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] p-3">
                 <div className="relative">
                   <PhotoMotion
                     src={item.image}
-                    alt={`Site desenvolvido pela Analisarty para ${item.name}`}
-                    className="aspect-video border-0"
+                    alt={`${item.badge === "App no ar" ? "Aplicativo" : "Site"} desenvolvido pela Analisarty para ${item.name}`}
+                    className={`${item.imageAspect} border-0`}
                   />
                   <span className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-emerald-300 backdrop-blur-sm">
-                    Site no ar
+                    {item.badge}
                   </span>
                 </div>
                 <div className="px-3 pb-3 pt-5">

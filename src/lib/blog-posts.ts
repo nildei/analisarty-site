@@ -74,6 +74,12 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
+    sources: [
+      {
+        name: "Google Business Profile Help: como melhorar seu posicionamento local",
+        url: "https://support.google.com/business/answer/7091",
+      },
+    ],
   },
   {
     slug: "trafego-pago-pequenas-empresas",
@@ -201,6 +207,12 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "SEO local é um trabalho orgânico e contínuo: não existe pagamento direto ao Google para aparecer melhor nessas buscas. Isso é diferente do tráfego pago, onde a empresa paga para aparecer em destaque. As duas estratégias podem (e costumam) trabalhar juntas, mas resolvem problemas diferentes.",
         ],
+      },
+    ],
+    sources: [
+      {
+        name: "Google Business Profile Help: como melhorar seu posicionamento local",
+        url: "https://support.google.com/business/answer/7091",
       },
     ],
   },

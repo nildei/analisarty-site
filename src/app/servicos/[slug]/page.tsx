@@ -20,6 +20,7 @@ import { Accordion } from "@/components/ui/Accordion";
 import { PhotoMotion } from "@/components/graphics/PhotoMotion";
 import { services, faqItems, siteConfig, buildWhatsAppLink } from "@/lib/site-config";
 import { blogPosts } from "@/lib/blog-posts";
+import { cities } from "@/lib/cities";
 
 const iconMap = {
   MapPin,
@@ -101,6 +102,7 @@ export default async function ServicePage({
   const relatedServices = services.filter((item) => item.id !== service.id);
   const relatedFaq = service.faqIndices.map((index) => faqItems[index]);
   const relatedPosts = blogPosts.filter((post) => post.relatedServiceIds.includes(service.id));
+  const servedCities = cities.filter((city) => city.relatedServiceIds.includes(service.id));
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -262,6 +264,25 @@ export default async function ServicePage({
             <Reveal delay={0.1} className="mt-10">
               <Accordion items={relatedFaq} />
             </Reveal>
+          </Container>
+        </section>
+      )}
+
+      {servedCities.length > 0 && (
+        <section className="py-16 lg:py-20">
+          <Container>
+            <SectionHeading eyebrow="Região" title="Atendemos as principais cidades da Grande BH" />
+            <div className="mt-10 flex flex-wrap gap-3">
+              {servedCities.map((city) => (
+                <Link
+                  key={city.slug}
+                  href={`/agencia-de-marketing-em-${city.slug}`}
+                  className="hover-glow rounded-full border border-white/10 bg-white/[0.02] px-5 py-2.5 text-sm text-white/70 transition-colors hover:border-blue-400/30 hover:text-white"
+                >
+                  {city.name}
+                </Link>
+              ))}
+            </div>
           </Container>
         </section>
       )}

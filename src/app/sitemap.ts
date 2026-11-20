@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig, services } from "@/lib/site-config";
 import { blogPosts } from "@/lib/blog-posts";
+import { cities } from "@/lib/cities";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -10,6 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteConfig.url}/servicos`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     ...services.map((service) => ({
       url: `${siteConfig.url}/servicos/${service.id}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    ...cities.map((city) => ({
+      url: `${siteConfig.url}/agencia-de-marketing-em-${city.slug}`,
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.7,

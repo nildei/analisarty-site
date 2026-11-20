@@ -1,4 +1,5 @@
 import { siteConfig, services, faqItems } from "@/lib/site-config";
+import { cities } from "@/lib/cities";
 
 export function JsonLd() {
   const data = {
@@ -16,14 +17,14 @@ export function JsonLd() {
       jobTitle: siteConfig.founderRole,
     },
     areaServed: [
-      {
+      ...cities.map((city) => ({
         "@type": "City",
-        name: "Contagem",
+        name: city.name,
         containedInPlace: {
           "@type": "State",
           name: "Minas Gerais",
         },
-      },
+      })),
       {
         "@type": "Country",
         name: "BR",

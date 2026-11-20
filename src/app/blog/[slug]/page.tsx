@@ -7,6 +7,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { blogPosts } from "@/lib/blog-posts";
 import { services, siteConfig, buildWhatsAppLink, defaultWhatsAppMessage } from "@/lib/site-config";
+import { cities } from "@/lib/cities";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -55,6 +56,9 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const relatedServices = services.filter((service) => post.relatedServiceIds.includes(service.id));
+  const relatedCities = cities.filter((city) =>
+    city.relatedServiceIds.some((id) => post.relatedServiceIds.includes(id)),
+  );
   const pageUrl = `${siteConfig.url}/blog/${post.slug}`;
 
   const breadcrumbData = {
@@ -198,6 +202,24 @@ export default async function BlogPostPage({
                     className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.02] px-4 py-2 text-sm text-white/70 hover:border-blue-400/30 hover:text-white"
                   >
                     {service.title}
+                    <ArrowRight className="size-3.5" />
+                  </Link>
+                ))}
+              </div>
+            </Reveal>
+          )}
+
+          {relatedCities.length > 0 && (
+            <Reveal className="mt-6">
+              <p className="text-sm font-semibold text-white/50">Atendemos sua região:</p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                {relatedCities.map((city) => (
+                  <Link
+                    key={city.slug}
+                    href={`/agencia-de-marketing-em-${city.slug}`}
+                    className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.02] px-4 py-2 text-sm text-white/70 hover:border-blue-400/30 hover:text-white"
+                  >
+                    {city.name}
                     <ArrowRight className="size-3.5" />
                   </Link>
                 ))}

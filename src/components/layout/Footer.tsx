@@ -3,13 +3,14 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { services, siteConfig, buildWhatsAppLink, defaultWhatsAppMessage } from "@/lib/site-config";
+import { cities } from "@/lib/cities";
 
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-white/10 bg-navy-950">
-      <Container className="grid gap-12 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <Container className="grid gap-12 py-16 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
         <div>
           <Link href="/" aria-label="Analisarty Negócios Online">
             <Logo />
@@ -55,6 +56,22 @@ export function Footer() {
               <li key={service.id}>
                 <Link href={`/servicos/${service.id}`} className="text-sm text-white/55 transition-colors hover:text-white">
                   {service.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-white">Atendemos</p>
+          <ul className="mt-4 space-y-3">
+            {cities.map((city) => (
+              <li key={city.slug}>
+                <Link
+                  href={`/agencia-de-marketing-em-${city.slug}`}
+                  className="text-sm text-white/55 transition-colors hover:text-white"
+                >
+                  {city.name}
                 </Link>
               </li>
             ))}

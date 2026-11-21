@@ -401,4 +401,59 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "google-testa-local-pack-ai-overview-sem-botoes",
+    title: "Google testa versão do local pack em AI Overviews sem botões de ação: o que isso muda para o seu negócio",
+    metaDescription:
+      "O Google estaria testando o local pack dos AI Overviews sem botões, fotos e avaliações. Veja o que foi noticiado e como manter seu negócio encontrável.",
+    excerpt:
+      "Segundo o Search Engine Roundtable, o Google testa uma versão do local pack dentro dos AI Overviews sem botões de ação. Entenda o que é, o que ainda não se sabe e o que revisar.",
+    publishedAt: "2026-11-21",
+    keywords: ["local pack", "ai overviews", "seo local", "perfil da empresa no google", "busca local"],
+    relatedServiceIds: ["seo-local", "google-perfil"],
+    sections: [
+      {
+        heading: "O que foi noticiado",
+        paragraphs: [
+          "Em 10 de novembro de 2026, o Search Engine Roundtable noticiou que o Google está testando a retirada dos botões de ação, das avaliações e das fotos da versão do local pack exibida dentro dos AI Overviews, os resumos gerados por IA nos resultados de busca.",
+          "Segundo a reportagem, isso torna mais difícil para quem pesquisa visitar o site, ligar para a empresa ou pedir rota diretamente a partir da busca. A matéria cita Joy Hawkins, especialista em busca local, que observou que, no celular, o local pack tradicional deixa de aparecer quando essa versão é exibida.",
+        ],
+      },
+      {
+        heading: "O que é o local pack e por que ele importa",
+        paragraphs: [
+          "O local pack é o bloco com mapa e três empresas que costuma aparecer quando alguém busca algo como \"dentista perto de mim\". Normalmente ele traz botões para ligar, ver o site e traçar a rota, além de nota e fotos.",
+          "Para negócios locais, esse bloco é uma das principais portas de entrada para novos contatos. Qualquer mudança em como ele é exibido pode alterar o caminho que o cliente faz até a empresa.",
+        ],
+      },
+      {
+        heading: "O que ainda não se sabe",
+        paragraphs: [
+          "Trata-se de um teste noticiado por um veículo especializado, e não de um anúncio oficial do Google. Até onde conseguimos verificar, não há data de lançamento, alcance ou confirmação de que a mudança será mantida.",
+          "Por isso, não faz sentido reformular a estratégia por causa dessa notícia. O mais útil é acompanhar e medir o que acontece nos seus próprios números.",
+        ],
+      },
+      {
+        heading: "O que vale revisar agora",
+        paragraphs: [
+          "Confira se o Perfil da Empresa está completo e atualizado: nome, categoria, telefone, horário, endereço e descrição dos serviços. Se o cliente chegar à ficha por outro caminho, essas informações precisam estar corretas.",
+          "Mantenha as avaliações respondidas e as fotos em dia. Mesmo que algumas telas deixem de exibir esses elementos, eles continuam aparecendo na ficha completa e no Google Maps.",
+          "Verifique também se o site carrega bem no celular e se as páginas de serviço deixam claro o que a empresa faz e em quais regiões atende.",
+        ],
+      },
+      {
+        heading: "Como acompanhar o efeito no seu negócio",
+        paragraphs: [
+          "No Perfil da Empresa, observe as métricas de ligações, pedidos de rota e cliques no site ao longo das próximas semanas. No Search Console, acompanhe cliques e impressões das páginas principais.",
+          "Se notar queda, compare com o período anterior antes de concluir qualquer coisa, já que variações têm várias causas possíveis, como sazonalidade e outras atualizações do Google. Se quiser apoio para revisar o Perfil da Empresa e a presença local, a Analisarty pode ajudar.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        name: "Search Engine Roundtable: Google AI Overview Local Pack Dropping Action Buttons, Photos & Reviews",
+        url: "https://www.seroundtable.com/google-ai-overview-local-pack-action-buttons-42483.html",
+      },
+    ],
+  },
 ];

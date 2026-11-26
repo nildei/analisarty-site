@@ -456,4 +456,63 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "google-link-de-agendamento-perfil-empresa-botao-reservar",
+    title: "Link de agendamento no Perfil da Empresa: Google estaria exibindo botões de reserva automaticamente",
+    metaDescription:
+      "Segundo o Search Engine Roundtable, o Google pode estar adicionando botões de agendamento a perfis de empresas. Veja o que foi noticiado e o que conferir no seu perfil.",
+    excerpt:
+      "Um relato de novembro de 2026 aponta que o Google pode estar exibindo botões de reserva em perfis sem configuração prévia. Veja o que revisar no campo de link de agendamento.",
+    publishedAt: "2026-11-26",
+    keywords: ["link de agendamento", "perfil da empresa no google", "botão reservar google", "seo local", "busca local"],
+    relatedServiceIds: ["google-perfil", "seo-local"],
+    sections: [
+      {
+        heading: "O que foi noticiado",
+        paragraphs: [
+          "Em 9 de novembro de 2026, o Search Engine Roundtable publicou um relato com o título \"Google Adding Booking Links To Business Profiles Automatically?\", com ponto de interrogação. Segundo a reportagem, o Google pode estar adicionando automaticamente links de agendamento a alguns perfis de empresas locais.",
+          "O relato descreve que, em alguns casos, esses links de reserva apresentam erro e levam a uma página de erro do próprio Google. Também menciona que apenas informar a página de contato do site no campo de link de agendamento já estaria fazendo aparecer o botão \"Book Online\", algo que antes parecia exigir configuração por meio de parceiros de reserva do Google.",
+        ],
+      },
+      {
+        heading: "O que ainda não está confirmado",
+        paragraphs: [
+          "A matéria se baseia em observações do autor em perfis de clientes e em uma publicação de fórum. Até onde conseguimos verificar, não há comunicado oficial do Google confirmando essa mudança, e não sabemos o alcance nem se o comportamento será mantido.",
+          "Por isso, trate a notícia como um sinal para conferir o seu perfil, e não como uma regra nova definitiva.",
+        ],
+      },
+      {
+        heading: "Onde fica o link de agendamento",
+        paragraphs: [
+          "De acordo com a página de ajuda do Google, é possível adicionar links de agendamento na aba Informações do gerenciador do Perfil da Empresa, e também remover links de reserva de terceiros que apareçam no perfil.",
+          "Se a sua empresa trabalha com horário marcado, como clínicas, estúdios, oficinas ou consultorias, esse campo costuma ser a ligação direta entre quem encontra o perfil e a sua agenda.",
+        ],
+      },
+      {
+        heading: "O que conferir no seu perfil",
+        paragraphs: [
+          "Pesquise o nome da sua empresa no Google, no celular e no computador, e veja se aparece algum botão de reserva ou agendamento que você não configurou. Clique nele como se fosse um cliente e confirme se a página abre e leva ao lugar certo.",
+          "Se o link estiver quebrado ou apontar para um destino que não representa o seu atendimento, revise o campo na aba Informações. Se o botão não fizer sentido para o seu negócio, verifique as opções de edição ou remoção disponíveis no perfil.",
+          "Se você usa uma ferramenta própria de agenda, informe nela o endereço direto da página de marcação, em vez de uma página genérica, e teste de vez em quando.",
+        ],
+      },
+      {
+        heading: "Mantendo o caminho do cliente simples",
+        paragraphs: [
+          "Independentemente dessa mudança, vale garantir que quem chega pelo Google consiga entrar em contato por pelo menos um canal que funcione: telefone, WhatsApp ou agendamento. Informações de horário, endereço e serviços também precisam estar coerentes com o que o site diz.",
+          "Se quiser apoio para revisar o Perfil da Empresa e organizar os canais de contato e agendamento, a Analisarty pode ajudar.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        name: "Search Engine Roundtable: Google Adding Booking Links To Business Profiles Automatically?",
+        url: "https://seroundtable.com/google-business-profiles-adding-booking-links-42477.html",
+      },
+      {
+        name: "Ajuda do Perfil da Empresa no Google: links de agendamento",
+        url: "https://support.google.com/business/answer/6218037",
+      },
+    ],
+  },
 ];

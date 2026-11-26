@@ -55,10 +55,11 @@ export function Hero() {
           className="absolute left-1/2 top-28 flex -translate-x-1/2 justify-center lg:inset-0 lg:top-0 lg:translate-x-0 lg:items-center lg:justify-center"
           style={{ scale: globeScale }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element -- animated PNG must stay unoptimized to keep its rotation */}
+          {/* eslint-disable-next-line @next/next/no-img-element -- animated WebP must stay unoptimized to keep its rotation */}
           <img
-            src="/images/globo-rotacao.png"
+            src="/images/globo-rotacao.webp"
             alt=""
+            fetchPriority="high"
             className="w-[min(85vw,480px)] max-w-none lg:w-[min(72vw,1150px)]"
           />
         </motion.div>

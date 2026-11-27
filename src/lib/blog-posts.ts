@@ -515,4 +515,66 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "perfil-empresa-google-suspenso-formulario-recurso",
+    title: "Perfil da Empresa suspenso no Google: o que fazer e como preparar o recurso",
+    metaDescription:
+      "O Search Engine Roundtable noticiou um formulário de recurso mais simples no Perfil da Empresa. Veja como se preparar caso o seu perfil seja suspenso.",
+    excerpt:
+      "Segundo o Search Engine Roundtable, o formulário de recursos do Perfil da Empresa no Google foi simplificado. Veja o que o Google orienta fazer se o perfil for suspenso.",
+    publishedAt: "2026-11-27",
+    keywords: ["perfil da empresa suspenso", "recurso google business profile", "reativar perfil google", "seo local", "busca local"],
+    relatedServiceIds: ["google-perfil", "seo-local"],
+    sections: [
+      {
+        heading: "O que foi noticiado",
+        paragraphs: [
+          "O Search Engine Roundtable publicou, nesta semana, uma matéria com o título \"Google Business Profiles Appeals Form Simplified\", indicando que o formulário usado para recorrer de problemas no Perfil da Empresa foi simplificado.",
+          "Não conseguimos acessar o texto completo da matéria para detalhar o que mudou, e até onde verificamos não há um comunicado oficial do Google sobre isso. Por isso, este artigo não descreve o novo formulário: ele usa as orientações que o próprio Google mantém em suas páginas de ajuda sobre suspensão e recursos.",
+        ],
+      },
+      {
+        heading: "Por que uma suspensão afeta o negócio",
+        paragraphs: [
+          "Quando um perfil é suspenso ou desativado, a empresa pode deixar de aparecer normalmente no Google Maps e na busca local. Para quem depende de ligações, pedidos de rota e mensagens vindos do Google, isso interrompe um canal importante de contato.",
+          "Daí a importância de saber, antes de precisar, como funciona o processo de recurso.",
+        ],
+      },
+      {
+        heading: "O que o Google orienta fazer",
+        paragraphs: [
+          "Segundo a página de ajuda do Google sobre recursos, um perfil suspenso ou desativado precisa ser reativado antes que decisões sobre conteúdo possam ser contestadas. A mesma página orienta a não criar um novo perfil para a mesma empresa enquanto o problema não é resolvido.",
+          "A página de ajuda sobre perfis suspensos informa que o Google pode pedir evidências de que o negócio é real, e cita como exemplos documentos como registro da empresa, alvará e certificados fiscais. Ela também indica que a maioria das solicitações é analisada em alguns dias, sem prazo garantido.",
+        ],
+      },
+      {
+        heading: "Como se preparar antes de precisar",
+        paragraphs: [
+          "Mantenha à mão os documentos do negócio, como CNPJ, alvará e comprovante de endereço, e confirme que o nome, o endereço e a categoria do perfil correspondem ao que existe na prática e no seu site.",
+          "Evite alterações bruscas de nome, categoria ou endereço sem necessidade, e use apenas informações reais. Registre quem tem acesso de proprietário ou gerente ao perfil, para que o recurso possa ser aberto sem demora.",
+        ],
+      },
+      {
+        heading: "Se o perfil for suspenso",
+        paragraphs: [
+          "Abra o recurso pelo canal oficial indicado nas páginas de ajuda do Google, leia o motivo informado e envie as evidências solicitadas com atenção às instruções, já que o Google informa que alguns formulários de evidência têm tempo limite para envio.",
+          "Se quiser apoio para revisar o Perfil da Empresa e se organizar para esse tipo de situação, a Analisarty pode ajudar.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        name: "Search Engine Roundtable: Google Business Profiles Appeals Form Simplified",
+        url: "https://seroundtable.com/google-business-profiles-appeals-form-simplified-42593.html",
+      },
+      {
+        name: "Ajuda do Perfil da Empresa no Google: recursos de conteúdo e restrições do perfil",
+        url: "https://support.google.com/business/answer/13597551",
+      },
+      {
+        name: "Ajuda do Perfil da Empresa no Google: corrigir perfis suspensos ou desativados",
+        url: "https://support.google.com/business/answer/4569145",
+      },
+    ],
+  },
 ];

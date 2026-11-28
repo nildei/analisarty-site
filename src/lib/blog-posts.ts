@@ -577,4 +577,58 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "local-pack-google-sem-avaliacoes-bug-perfil-empresa",
+    title: "Local pack do Google mostrando \"sem avaliações\": o que checar no seu Perfil da Empresa",
+    metaDescription:
+      "O Search Engine Roundtable noticiou um bug que exibe \"sem avaliações\" no local pack. Veja o que foi relatado e como conferir as avaliações do seu perfil.",
+    excerpt:
+      "Segundo o Search Engine Roundtable, o Google às vezes mostra \"sem avaliações\" no local pack para empresas que têm avaliações. Veja como verificar o seu caso sem tomar decisões precipitadas.",
+    publishedAt: "2026-11-28",
+    keywords: ["local pack", "avaliações google", "perfil da empresa no google", "seo local", "busca local"],
+    relatedServiceIds: ["google-perfil", "seo-local"],
+    sections: [
+      {
+        heading: "O que foi noticiado",
+        paragraphs: [
+          "O Search Engine Roundtable publicou, em novembro de 2026, uma matéria intitulada \"Google Local Pack Showing No Reviews When There Are Reviews\". De acordo com o relato, o Google está exibindo \"sem avaliações\" no local pack para algumas empresas que, na prática, têm avaliações.",
+          "Ainda segundo a matéria, ao abrir a ficha da empresa a contagem correta aparece, e o problema não é consistente: uma mesma empresa pode mostrar as avaliações em alguns momentos e em outros não.",
+        ],
+      },
+      {
+        heading: "O que ainda não sabemos",
+        paragraphs: [
+          "Não conseguimos acessar o texto completo da matéria, então este artigo se limita ao que o resumo da reportagem informa. Até onde verificamos, não há comunicado oficial do Google explicando a causa nem prevendo quando o comportamento será corrigido.",
+          "Por isso, trate o caso como uma falha de exibição noticiada, e não como uma mudança definitiva nas regras do Google.",
+        ],
+      },
+      {
+        heading: "Por que isso preocupa quem depende da busca local",
+        paragraphs: [
+          "O local pack é o bloco com mapa e empresas que aparece em buscas como \"mecânico perto de mim\". A nota e a quantidade de avaliações ajudam quem pesquisa a comparar opções rapidamente, e a ausência dessa informação pode deixar a ficha menos convincente.",
+          "Se o seu perfil apareceu assim, isso não significa necessariamente que as avaliações foram removidas.",
+        ],
+      },
+      {
+        heading: "Como conferir o seu perfil",
+        paragraphs: [
+          "Pesquise o nome da empresa e uma busca de serviço com a sua região, no celular e no computador, e abra a ficha completa para ver se a nota e a quantidade de avaliações aparecem. Anote o dia e o horário de cada teste.",
+          "Compare com o que o gerenciador do Perfil da Empresa mostra. Se a ficha completa e o gerenciador estão corretos e só o local pack falha, o relato da imprensa sugere um problema de exibição. Se as avaliações realmente sumiram da ficha completa, vale investigar com mais cuidado, por exemplo se algo mudou no perfil recentemente.",
+        ],
+      },
+      {
+        heading: "O que fazer enquanto isso",
+        paragraphs: [
+          "Evite medidas drásticas, como alterar nome, categoria ou endereço do perfil, ou pedir avaliações em massa. Continue respondendo às avaliações existentes e mantendo as informações do perfil corretas.",
+          "Se a falha persistir por vários dias, registre capturas de tela e use os canais oficiais de suporte do Perfil da Empresa. Se quiser apoio para revisar o perfil e acompanhar a presença local, a Analisarty pode ajudar.",
+        ],
+      },
+    ],
+    sources: [
+      {
+        name: "Search Engine Roundtable: Google Local Pack Showing No Reviews When There Are Reviews",
+        url: "https://www.seroundtable.com/google-local-pack-no-reviews-bug-42624.html",
+      },
+    ],
+  },
 ];
